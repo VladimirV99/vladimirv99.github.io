@@ -1,6 +1,10 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
-    background-color: #212121;
+    background-color: #212121;   
 }
 
 nav {
@@ -102,4 +106,83 @@ main {
   
 .accordion.active:after {
     content: '\2796'; /* - */
+}
+
+.slideshow {
+    position: relative;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slide-number {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.caption {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.thumbnail-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.thumbnail-column {
+    float: left;
+    width: 16.66%;
+}
+
+.thumbnail {
+    opacity: 0.6;
+    cursor: pointer;
+    width: 100%;
+}
+
+.active,
+.thumbnail:hover {
+    opacity: 1;
 }
