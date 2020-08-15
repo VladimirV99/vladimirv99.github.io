@@ -4,11 +4,14 @@ let accordion = document.getElementsByClassName('accordion');
 for (let i = 0; i < accordion.length; i++) {
     accordion[i].addEventListener('click', function() {
         this.classList.toggle('active');
-        let panel = this.nextElementSibling;
-        if (panel.style.maxHeight)
+        let panel = this.previousElementSibling;
+        if (panel.style.maxHeight) {
+            accordion[i].innerHTML = "Show More";
             panel.style.maxHeight = null;
-        else
+        } else {
+            accordion[i].innerHTML = "Show Less";
             panel.style.maxHeight = panel.scrollHeight + "px";
+        }
     });
 }
 
@@ -40,7 +43,7 @@ function showSlides(name) {
     let slideshow = document.getElementById(name);
     let slides = slideshow.getElementsByClassName("slide");
     let thumbnails = slideshow.getElementsByClassName("thumbnail");
-    let captionText = slideshow.getElementsByClassName("caption");
+    let captionText = slideshow.getElementsByClassName("caption")[0];
 
     let n = indexes[name];
     if(!n || n >= slides.length)
