@@ -7,22 +7,20 @@ body {
     background-color: #212121;   
 }
 
+hr {
+    border-color: grey;
+}
+
+.center {
+    text-align: center;
+}
+
 .colored {
     color: rgb(62, 190, 233);
 }
 
-.icon {
-    text-decoration: none;
-    color: white;
+.fa-big {
     font-size: 1.5rem;
-    border-radius: 8px;
-    background-color: rgb(110, 110, 110);
-    padding: 8px;
-    margin: 0 .25rem;
-}
-
-.icon:hover {
-    background-color: rgb(85, 85, 85);
 }
 
 nav {
@@ -71,22 +69,18 @@ main {
     color: white;
 }
 
-.header {
-    text-align: center;
+#home {
+    font-size: 3em;
 }
 
-@media screen and (max-width: 800px) {
-    #main-nav {
-        display: block;
-    }
-    
-    #side-nav {
-        display: none;
-    }
+.social-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
-    main {
-        margin-left: 0;
-    }
+.header {
+    text-align: center;
 }
 
 .panel {
@@ -99,7 +93,13 @@ main {
 
 .panel-header {
     padding: 18px;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid rgb(53, 53, 53);
+}
+
+.panel-title {
+    font-size: 1.3em;
+    margin-top: 0;
+    margin-bottom: .5rem;
 }
 
 .accordion {
@@ -156,8 +156,11 @@ main {
     background-color: rgb(85, 85, 85);
 }
 
-.btn i {
-    margin-right: .25rem;
+.btn-icon {
+    font-size: 1.5rem;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 0 .25rem;
 }
 
 .slideshow {
@@ -205,6 +208,7 @@ main {
 
 .slide-number {
     background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
@@ -214,7 +218,8 @@ main {
 
 .caption {
     text-align: center;
-    background-color: #222;
+    border-top: 1px solid rgb(53, 53, 53);
+    border-bottom: 1px solid rgb(53, 53, 53);
     padding: 5px 0;
     margin: 0;
     color: white;
@@ -240,4 +245,49 @@ main {
 .active,
 .thumbnail:hover {
     opacity: 1;
+}
+
+.education-item {
+    display: flex;
+}
+
+.education-info {
+    flex-grow: 1;
+}
+
+.education-info p {
+    margin-block-start: .5rem;
+    margin-block-end: .5rem;
+}
+
+.school-name {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#contact-info {
+    margin: 0 auto;
+    font-size: 1.3em;
+}
+
+#contact-info tr {
+    line-height: 3em;
+}
+
+#contact-info td {
+    padding: 0 .25rem;
+}
+
+@media screen and (max-width: 800px) {
+    #main-nav {
+        display: block;
+    }
+    
+    #side-nav {
+        display: none;
+    }
+
+    main {
+        margin-left: 0;
+    }
 }
