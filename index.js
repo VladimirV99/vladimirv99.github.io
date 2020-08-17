@@ -17,7 +17,9 @@ for (let i = 0; i < accordion.length; i++) {
 
 // Slideshows
 let indexes = { 
-    'portal': 0
+    'portal': 0,
+    'multiframe': 0,
+    'filemanager': 0
 };
 
 for(name of Object.keys(indexes)) {
@@ -66,4 +68,16 @@ let portal = {
     prev: () => prevSlide('portal'),
     next: () => nextSlide('portal'),
     set: slide => setSlide('portal', slide)
+}
+
+let multiframe = {
+    prev: () => prevSlide('multiframe'),
+    next: () => nextSlide('multiframe'),
+    set: slide => setSlide('multiframe', slide)
+}
+
+let filemanager = {
+    prev: () => prevSlide('filemanager'),
+    next: () => nextSlide('filemanager'),
+    set: slide => setSlide('filemanager', slide)
 }

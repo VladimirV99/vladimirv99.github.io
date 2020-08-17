@@ -44,7 +44,7 @@
                 <div class="education-item">
                     <div class="education-info">
                         <p class="school-name">Matematički fakultet, Univerzitet u Beogradu</p>
-                        <p>Osnovne studije</p>
+                        <p>Undergraduate studies</p>
                         <p>Third year</p>
                         <p>Average 9.83/10.00</p>
                     </div>
@@ -78,14 +78,17 @@
             <div class="panel-header">
                 <h3 class="panel-title">Portal</h3>
                 <p>
-                    A portal like game written from scratch in C and OpenGL for my computer graphics course.
+                    A portal like game written from scratch in C and OpenGL using the freeGLUT library.
+                    It contains a single level you traverse by firing and walking through portals.
+                    This game was made for the computer graphics course at the Faculty of Mathematics, University of Belgrade.
                 </p>
                 <ul class="tags">
                     <li>C</li>
                     <li>OpenGL</li>
                     <li>freeGLUT</li>
+                    <li>Makefile</li>
                 </ul>
-                <a href="https://github.com/VladimirV99/Portal" class="btn"><i class="fab fa-github"></i>View on GitHub</a>
+                <a href="https://github.com/VladimirV99/Portal" class="btn"><i class="mr fab fa-github"></i>View on GitHub</a>
             </div>
 
             <div class="drawer">
@@ -113,7 +116,7 @@
                     <!-- Thumbnails -->
                     <div class="thumbnail-row">
                         <div class="thumbnail-column">
-                            <img class="thumbnail" src="projects/portal/recursive.png" onclick="portal.set(0)" alt="Recursive portal rendering">
+                            <img class="thumbnail" src="projects/portal/recursive.png" onclick="portal.set(0)" alt="Recursive portal rendering and player model">
                         </div>
                         <div class="thumbnail-column">
                             <img class="thumbnail" src="projects/portal/companion_cube.png" onclick="portal.set(1)" alt="Companion Cube">
@@ -123,6 +126,163 @@
             </div>
             <div class="accordion">
                 Show more
+            </div>
+        </article>
+
+        <article class="panel">
+            <div class="panel-header">
+                <h3 class="panel-title">MultiFrame</h3>
+                <p>
+                    MultiFrame is a cross-platform obstacle avoidance game where you control multiple entities at the same time.
+                </p>
+                <ul class="tags">
+                    <li>Java</li>
+                    <li>libGDX</li>
+                    <li>Game</li>
+                    <li>Desktop</li>
+                    <li>Android</li>
+                </ul>
+                <a href="https://github.com/VladimirV99/MultiFrame" class="btn"><i class="mr fab fa-github"></i>View on GitHub</a>
+            </div>
+
+            <div class="drawer">
+                <div id="multiframe" class="slideshow">
+                    <!-- Slides -->
+                    <div class="slide">
+                        <div class="slide-number">1 / 4</div>
+                        <img src="projects/multiframe/gameplay.png">
+                    </div>
+                    
+                    <div class="slide">
+                        <div class="slide-number">2 / 4</div>
+                        <img src="projects/multiframe/main_menu.png">
+                    </div>
+
+                    <div class="slide">
+                        <div class="slide-number">3 / 4</div>
+                        <img src="projects/multiframe/mode_select.png">
+                    </div>
+
+                    <div class="slide">
+                        <div class="slide-number">4 / 4</div>
+                        <img src="projects/multiframe/mode_config.png">
+                    </div>
+    
+                    <!-- Navigation buttons -->
+                    <a class="prev" onclick="multiframe.prev()">&#10094;</a>
+                    <a class="next" onclick="multiframe.next()">&#10095;</a>
+    
+                    <!-- Caption -->
+                    <div class="caption-container">
+                        <p class="caption"></p>
+                    </div>
+    
+                    <!-- Thumbnails -->
+                    <div class="thumbnail-row">
+                        <div class="thumbnail-column">
+                            <img class="thumbnail" src="projects/multiframe/gameplay.png" onclick="multiframe.set(0)" alt="Dual Frame Mode Gameplay">
+                        </div>
+                        <div class="thumbnail-column">
+                            <img class="thumbnail" src="projects/multiframe/main_menu.png" onclick="multiframe.set(1)" alt="Main Menu">
+                        </div>
+                        <div class="thumbnail-column">
+                            <img class="thumbnail" src="projects/multiframe/mode_select.png" onclick="multiframe.set(2)" alt="Mode Select Screen">
+                        </div>
+                        <div class="thumbnail-column">
+                            <img class="thumbnail" src="projects/multiframe/mode_config.png" onclick="multiframe.set(3)" alt="Dual Frame Custom Configuration">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                Show more
+            </div>
+        </article>
+
+        <article class="panel">
+            <div class="panel-header">
+                <h3 class="panel-title">Android File Manager</h3>
+                <p>
+                    This is an implementation of a file manager for Android.
+                    It includes launchers for basic file types like text, image, audio and video files.
+                    Other files can be opened using appropriate apps installed on the system.
+                    The app supports two themes: light and dark which can be set manually or using the system dark mode on Android 10+
+                </p>
+                <ul class="tags">
+                    <li>Kotlin</li>
+                    <li>Android</li>
+                    <li>Material</li>
+                    <li>Jetpack</li>
+                </ul>
+                <a href="https://github.com/VladimirV99/AndroidFileManager" class="btn"><i class="mr fab fa-github"></i>View on GitHub</a>
+            </div>
+
+            <div class="drawer">
+                <div id="filemanager" class="slideshow">
+                    <!-- Slides -->
+                    <div class="slide">
+                        <div class="slide-number">1 / 4</div>
+                        <img src="projects/filemanager/theme_light.png">
+                    </div>
+                    
+                    <div class="slide">
+                        <div class="slide-number">2 / 4</div>
+                        <img src="projects/filemanager/theme_dark.png">
+                    </div>
+    
+                    <div class="slide">
+                        <div class="slide-number">3 / 4</div>
+                        <img src="projects/filemanager/navigation.png">
+                    </div>
+                    
+                    <div class="slide">
+                        <div class="slide-number">4 / 4</div>
+                        <img src="projects/filemanager/selection.png">
+                    </div>
+
+                    <!-- Navigation buttons -->
+                    <a class="prev" onclick="filemanager.prev()">&#10094;</a>
+                    <a class="next" onclick="filemanager.next()">&#10095;</a>
+    
+                    <!-- Caption -->
+                    <div class="caption-container">
+                        <p class="caption"></p>
+                    </div>
+    
+                    <!-- Thumbnails -->
+                    <div class="thumbnail-row">
+                        <div class="thumbnail-column">
+                            <img class="thumbnail" src="projects/filemanager/theme_light.png" onclick="filemanager.set(0)" alt="Light Theme UI">
+                        </div>
+                        <div class="thumbnail-column">
+                            <img class="thumbnail" src="projects/filemanager/theme_dark.png" onclick="filemanager.set(1)" alt="Dark Theme UI">
+                        </div>
+                        <div class="thumbnail-column">
+                            <img class="thumbnail" src="projects/filemanager/navigation.png" onclick="filemanager.set(2)" alt="Navigation Menu">
+                        </div>
+                        <div class="thumbnail-column">
+                            <img class="thumbnail" src="projects/filemanager/selection.png" onclick="filemanager.set(3)" alt="File Selection Mode">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                Show more
+            </div>
+        </article>
+
+        <article class="panel">
+            <div class="panel-header">
+                <h3 class="panel-title">Arduino Projects</h3>
+                <p>
+                    A collection of Arduino based projects that demonstrate the usage of various sensors and components.
+                </p>
+                <ul class="tags">
+                    <li>Arduino</li>
+                    <li>C++</li>
+                    <li>Python</li>
+                </ul>
+                <a href="https://github.com/VladimirV99/Arduino-Projects" class="btn"><i class="mr fab fa-github"></i>View on GitHub</a>
             </div>
         </article>
 

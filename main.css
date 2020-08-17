@@ -23,6 +23,10 @@ hr {
     font-size: 1.5rem;
 }
 
+.mr {
+    margin-right: .25rem;
+}
+
 nav {
     background-color: #181818;
 }
@@ -170,11 +174,15 @@ main {
 
 .slide {
     display: none;
+    margin: 0 auto;
+    text-align: center;
     width: 100%;
+    max-width: 800px;
 }
 
 .slide img {
-    width: 100%;
+    max-width: 100%;
+    max-height: 500px;
 }
 
 .prev,
