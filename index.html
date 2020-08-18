@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="icon" href="img/logo.png">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <nav id="main-nav">
-        <ul class="nav-menu">
-            <li><a href="#home" class="nav-item">Home</a></li>
-            <li><a href="#education" class="nav-item">Education</a></li>
-            <li><a href="#projects" class="nav-item">Projects</a></li>
-            <li><a href="#contact" class="nav-item">Contact Me</a></li>
-        </ul>
+        <img class="profile-photo-top" src="img/logo.png">
+        <a href="javascript:void(0);" class="nav-toggle" onclick="toggleNav()">
+            <i class="fa fa-bars"></i>
+        </a>
     </nav>
+    <ul id="nav-dropdown" class="nav-menu dropdown-toggle">
+        <li><a href="#home" class="nav-item" onclick="hideNav()">Home</a></li>
+        <li><a href="#education" class="nav-item" onclick="hideNav()">Education</a></li>
+        <li><a href="#projects" class="nav-item" onclick="hideNav()">Projects</a></li>
+        <li><a href="#contact" class="nav-item" onclick="hideNav()">Contact Me</a></li>
+    </ul>
 
     <nav id="side-nav">
+        <img class="profile-photo-side" src="img/logo.png">
         <ul id="side-nav-menu" class="nav-menu">
             <li><a href="#home" class="nav-item">Home</a></li>
             <li><a href="#education" class="nav-item">Education</a></li>
@@ -283,6 +289,86 @@
                     <li>Python</li>
                 </ul>
                 <a href="https://github.com/VladimirV99/Arduino-Projects" class="btn"><i class="mr fab fa-github"></i>View on GitHub</a>
+            </div>
+        </article>
+
+        <article class="panel">
+            <div class="panel-header">
+                <h3 class="panel-title">Marker</h3>
+                <p>
+                    Marker is a forum designed for college students to help each other in solving problems and learning.
+                </p>
+                <ul class="tags">
+                    <li>JavaScript</li>
+                    <li>Node</li>
+                    <li>React</li>
+                    <li>MySQL</li>
+                    <li>Redis</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+                <a href="https://github.com/VladimirV99/Marker" class="btn"><i class="mr fab fa-github"></i>View on GitHub</a>
+            </div>
+
+            <div class="drawer">
+                <div id="marker" class="slideshow">
+                    <!-- Slides -->
+                    <div class="slide">
+                        <div class="slide-number">1 / 5</div>
+                        <img src="projects/marker/theme_light.png">
+                    </div>
+                    
+                    <div class="slide">
+                        <div class="slide-number">2 / 5</div>
+                        <img src="projects/marker/theme_dark.png">
+                    </div>
+    
+                    <div class="slide">
+                        <div class="slide-number">3 / 5</div>
+                        <img src="projects/marker/thread.png">
+                    </div>
+                    
+                    <div class="slide">
+                        <div class="slide-number">4 / 5</div>
+                        <img src="projects/marker/profile_page.png">
+                    </div>
+
+                    <div class="slide">
+                        <div class="slide-number">5 / 5</div>
+                        <img src="projects/marker/user_page.png">
+                    </div>
+
+                    <!-- Navigation buttons -->
+                    <a class="prev" onclick="marker.prev()">&#10094;</a>
+                    <a class="next" onclick="marker.next()">&#10095;</a>
+    
+                    <!-- Caption -->
+                    <div class="caption-container">
+                        <p class="caption"></p>
+                    </div>
+    
+                    <!-- Thumbnails -->
+                    <div class="thumbnail-row">
+                        <div class="thumbnail-column">
+                            <img class="thumbnail" src="projects/marker/theme_light.png" onclick="marker.set(0)" alt="Light Theme UI">
+                        </div>
+                        <div class="thumbnail-column">
+                            <img class="thumbnail" src="projects/marker/theme_dark.png" onclick="marker.set(1)" alt="Dark Theme UI">
+                        </div>
+                        <div class="thumbnail-column">
+                            <img class="thumbnail" src="projects/marker/thread.png" onclick="marker.set(2)" alt="Thread">
+                        </div>
+                        <div class="thumbnail-column">
+                            <img class="thumbnail" src="projects/marker/profile_page.png" onclick="marker.set(3)" alt="Edit Profile Page">
+                        </div>
+                        <div class="thumbnail-column">
+                            <img class="thumbnail" src="projects/marker/user_page.png" onclick="marker.set(4)" alt="User Page">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                Show more
             </div>
         </article>
 

@@ -1,3 +1,13 @@
+function toggleNav() {
+    let dropdown = document.getElementById('nav-dropdown');
+    dropdown.classList.toggle('show');
+}
+
+function hideNav() {
+    let dropdown = document.getElementById('nav-dropdown');
+    dropdown.classList.remove('show');
+}
+
 // Accordions
 let accordion = document.getElementsByClassName('accordion');
 
@@ -19,7 +29,8 @@ for (let i = 0; i < accordion.length; i++) {
 let indexes = { 
     'portal': 0,
     'multiframe': 0,
-    'filemanager': 0
+    'filemanager': 0,
+    'marker': 0
 };
 
 for(name of Object.keys(indexes)) {
@@ -80,4 +91,10 @@ let filemanager = {
     prev: () => prevSlide('filemanager'),
     next: () => nextSlide('filemanager'),
     set: slide => setSlide('filemanager', slide)
+}
+
+let marker = {
+    prev: () => prevSlide('marker'),
+    next: () => nextSlide('marker'),
+    set: slide => setSlide('marker', slide)
 }
