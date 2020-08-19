@@ -20,7 +20,7 @@ for (let i = 0; i < accordion.length; i++) {
             panel.style.maxHeight = null;
         } else {
             accordion[i].innerHTML = "Show Less";
-            panel.style.maxHeight = panel.scrollHeight + "px";
+            panel.style.maxHeight = "fit-content";
         }
     });
 }
@@ -30,7 +30,11 @@ let indexes = {
     'portal': 0,
     'multiframe': 0,
     'filemanager': 0,
-    'marker': 0
+    'alas': 0,
+    'marker': 0,
+    'blog': 0,
+    'markdown': 0,
+    'pendulum': 0
 };
 
 for(name of Object.keys(indexes)) {
@@ -93,8 +97,32 @@ let filemanager = {
     set: slide => setSlide('filemanager', slide)
 }
 
+let alas = {
+    prev: () => prevSlide('alas'),
+    next: () => nextSlide('alas'),
+    set: slide => setSlide('alas', slide)
+}
+
 let marker = {
     prev: () => prevSlide('marker'),
     next: () => nextSlide('marker'),
     set: slide => setSlide('marker', slide)
+}
+
+let blog = {
+    prev: () => prevSlide('blog'),
+    next: () => nextSlide('blog'),
+    set: slide => setSlide('blog', slide)
+}
+
+let markdown = {
+    prev: () => prevSlide('markdown'),
+    next: () => nextSlide('markdown'),
+    set: slide => setSlide('markdown', slide)
+}
+
+let pendulum = {
+    prev: () => prevSlide('pendulum'),
+    next: () => nextSlide('pendulum'),
+    set: slide => setSlide('pendulum', slide)
 }
