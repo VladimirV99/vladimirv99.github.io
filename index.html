@@ -84,6 +84,92 @@
 
         <article class="panel">
             <div class="panel-header">
+                <h3 class="panel-title">Circa2020</h3>
+                <p>
+                    Circa2020 is a tool for designing and simulating logic circuits. 
+                    It supports all basic components (gates, plexers, memory, ...), saving and loading files, custom components and a lot of other useful features.
+                </p>
+                <ul class="tags">
+                    <li>C++</li>
+                    <li>Qt</li>
+                    <li>CMake</li>
+                    <li>Catch2</li>
+                </ul>
+                <a href="https://gitlab.com/VladimirV99/Circa2020" target="_blank" class="btn"><i class="mr fab fa-gitlab"></i>View on GitLab</a>
+            </div>
+
+            <div class="drawer">
+                <div id="circa2020" class="slideshow">
+                    <!-- Slides -->
+                    <div class="slide">
+                        <div class="slide-number">1 / 4</div>
+                        <img src="projects/circa2020/sr_latch.png">
+                    </div>
+                    
+                    <div class="slide">
+                        <div class="slide-number">2 / 4</div>
+                        <img src="projects/circa2020/components.png">
+                    </div>
+
+                    <div class="slide">
+                        <div class="slide-number">3 / 4</div>
+                        <img src="projects/circa2020/rotate_resize.png">
+                    </div>
+
+                    <div class="slide">
+                        <div class="slide-number">4 / 4</div>
+                        <img src="projects/circa2020/composite.png">
+                    </div>
+    
+                    <!-- Navigation buttons -->
+                    <a class="prev" onclick="circa2020.prev()">&#10094;</a>
+                    <a class="next" onclick="circa2020.next()">&#10095;</a>
+    
+                    <!-- Caption -->
+                    <div class="caption-container">
+                        <p class="caption"></p>
+                    </div>
+    
+                    <!-- Thumbnails -->
+                    <div class="thumbnail-row">
+                        <div class="thumbnail-column">
+                            <img class="thumbnail" src="projects/circa2020/sr_latch.png" onclick="circa2020.set(0)" alt="SR latch example">
+                        </div>
+                        <div class="thumbnail-column">
+                            <img class="thumbnail" src="projects/circa2020/components.png" onclick="circa2020.set(1)" alt="Component list">
+                        </div>
+                        <div class="thumbnail-column">
+                            <img class="thumbnail" src="projects/circa2020/rotate_resize.png" onclick="circa2020.set(2)" alt="Rotating and resizing components">
+                        </div>
+                        <div class="thumbnail-column">
+                            <img class="thumbnail" src="projects/circa2020/composite.png" onclick="circa2020.set(3)" alt="Custom component created from existing circuit">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                Show more
+            </div>
+        </article>
+
+        <article class="panel">
+            <div class="panel-header">
+                <h3 class="panel-title">Automatic Translation</h3>
+                <p>
+                    Language translation using a sequence-to-sequence LSTM neural network.
+                    This project was made for the computer intelligence course at the Faculty of Mathematics, University of Belgrade.
+                </p>
+                <ul class="tags">
+                    <li>Python</li>
+                    <li>Tensorflow</li>
+                    <li>Jupyter-Notebook</li>
+                </ul>
+                <a href="https://github.com/VladimirV99/Automatic-Translation" target="_blank" class="btn"><i class="mr fab fa-github"></i>View on GitHub</a>
+            </div>
+        </article>
+
+        <article class="panel">
+            <div class="panel-header">
                 <h3 class="panel-title">Portal</h3>
                 <p>
                     A portal like game written from scratch in C and OpenGL using the freeGLUT library.
@@ -96,7 +182,7 @@
                     <li>freeGLUT</li>
                     <li>Makefile</li>
                 </ul>
-                <a href="https://github.com/VladimirV99/Portal" class="btn"><i class="mr fab fa-github"></i>View on GitHub</a>
+                <a href="https://github.com/VladimirV99/Portal" target="_blank" class="btn"><i class="mr fab fa-github"></i>View on GitHub</a>
             </div>
 
             <div class="drawer">
@@ -147,163 +233,6 @@
 
         <article class="panel">
             <div class="panel-header">
-                <h3 class="panel-title">MultiFrame</h3>
-                <p>
-                    MultiFrame is a cross-platform obstacle avoidance game where you control multiple entities at the same time.
-                </p>
-                <ul class="tags">
-                    <li>Java</li>
-                    <li>libGDX</li>
-                    <li>Game</li>
-                    <li>Desktop</li>
-                    <li>Android</li>
-                </ul>
-                <a href="https://github.com/VladimirV99/MultiFrame" class="btn"><i class="mr fab fa-github"></i>View on GitHub</a>
-            </div>
-
-            <div class="drawer">
-                <div id="multiframe" class="slideshow">
-                    <!-- Slides -->
-                    <div class="slide">
-                        <div class="slide-number">1 / 4</div>
-                        <img src="projects/multiframe/gameplay.png">
-                    </div>
-                    
-                    <div class="slide">
-                        <div class="slide-number">2 / 4</div>
-                        <img src="projects/multiframe/main_menu.png">
-                    </div>
-
-                    <div class="slide">
-                        <div class="slide-number">3 / 4</div>
-                        <img src="projects/multiframe/mode_select.png">
-                    </div>
-
-                    <div class="slide">
-                        <div class="slide-number">4 / 4</div>
-                        <img src="projects/multiframe/mode_config.png">
-                    </div>
-    
-                    <!-- Navigation buttons -->
-                    <a class="prev" onclick="multiframe.prev()">&#10094;</a>
-                    <a class="next" onclick="multiframe.next()">&#10095;</a>
-    
-                    <!-- Caption -->
-                    <div class="caption-container">
-                        <p class="caption"></p>
-                    </div>
-    
-                    <!-- Thumbnails -->
-                    <div class="thumbnail-row">
-                        <div class="thumbnail-column">
-                            <img class="thumbnail" src="projects/multiframe/gameplay.png" onclick="multiframe.set(0)" alt="Dual Frame Mode Gameplay">
-                        </div>
-                        <div class="thumbnail-column">
-                            <img class="thumbnail" src="projects/multiframe/main_menu.png" onclick="multiframe.set(1)" alt="Main Menu">
-                        </div>
-                        <div class="thumbnail-column">
-                            <img class="thumbnail" src="projects/multiframe/mode_select.png" onclick="multiframe.set(2)" alt="Mode Select Screen">
-                        </div>
-                        <div class="thumbnail-column">
-                            <img class="thumbnail" src="projects/multiframe/mode_config.png" onclick="multiframe.set(3)" alt="Dual Frame Custom Configuration">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion">
-                Show more
-            </div>
-        </article>
-
-        <article class="panel">
-            <div class="panel-header">
-                <h3 class="panel-title">Android File Manager</h3>
-                <p>
-                    This is an implementation of a file manager for Android.
-                    It includes launchers for basic file types like text, image, audio and video files.
-                    Other files can be opened using appropriate apps installed on the system.
-                    The app supports two themes: light and dark which can be set manually or using the system dark mode on Android 10+
-                </p>
-                <ul class="tags">
-                    <li>Kotlin</li>
-                    <li>Android</li>
-                    <li>Material</li>
-                    <li>Jetpack</li>
-                </ul>
-                <a href="https://github.com/VladimirV99/AndroidFileManager" class="btn"><i class="mr fab fa-github"></i>View on GitHub</a>
-            </div>
-
-            <div class="drawer">
-                <div id="filemanager" class="slideshow">
-                    <!-- Slides -->
-                    <div class="slide">
-                        <div class="slide-number">1 / 4</div>
-                        <img src="projects/filemanager/theme_light.png">
-                    </div>
-                    
-                    <div class="slide">
-                        <div class="slide-number">2 / 4</div>
-                        <img src="projects/filemanager/theme_dark.png">
-                    </div>
-    
-                    <div class="slide">
-                        <div class="slide-number">3 / 4</div>
-                        <img src="projects/filemanager/navigation.png">
-                    </div>
-                    
-                    <div class="slide">
-                        <div class="slide-number">4 / 4</div>
-                        <img src="projects/filemanager/selection.png">
-                    </div>
-
-                    <!-- Navigation buttons -->
-                    <a class="prev" onclick="filemanager.prev()">&#10094;</a>
-                    <a class="next" onclick="filemanager.next()">&#10095;</a>
-    
-                    <!-- Caption -->
-                    <div class="caption-container">
-                        <p class="caption"></p>
-                    </div>
-    
-                    <!-- Thumbnails -->
-                    <div class="thumbnail-row">
-                        <div class="thumbnail-column">
-                            <img class="thumbnail" src="projects/filemanager/theme_light.png" onclick="filemanager.set(0)" alt="Light Theme UI">
-                        </div>
-                        <div class="thumbnail-column">
-                            <img class="thumbnail" src="projects/filemanager/theme_dark.png" onclick="filemanager.set(1)" alt="Dark Theme UI">
-                        </div>
-                        <div class="thumbnail-column">
-                            <img class="thumbnail" src="projects/filemanager/navigation.png" onclick="filemanager.set(2)" alt="Navigation Menu">
-                        </div>
-                        <div class="thumbnail-column">
-                            <img class="thumbnail" src="projects/filemanager/selection.png" onclick="filemanager.set(3)" alt="File Selection Mode">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion">
-                Show more
-            </div>
-        </article>
-
-        <article class="panel">
-            <div class="panel-header">
-                <h3 class="panel-title">Arduino Projects</h3>
-                <p>
-                    A collection of Arduino based projects that demonstrate the usage of various sensors and components.
-                </p>
-                <ul class="tags">
-                    <li>Arduino</li>
-                    <li>C++</li>
-                    <li>Python</li>
-                </ul>
-                <a href="https://github.com/VladimirV99/Arduino-Projects" class="btn"><i class="mr fab fa-github"></i>View on GitHub</a>
-            </div>
-        </article>
-
-        <article class="panel">
-            <div class="panel-header">
                 <h3 class="panel-title">Alas</h3>
                 <p>
                     Alas is my personal website made for the student server at the Faculty of Mathematics, University of Belgrade.
@@ -318,7 +247,7 @@
                     <li>HTML</li>
                     <li>CSS</li>
                 </ul>
-                <a href="https://github.com/VladimirV99/Alas" class="btn"><i class="mr fab fa-github"></i>View on GitHub</a>
+                <a href="https://github.com/VladimirV99/Alas" target="_blank" class="btn"><i class="mr fab fa-github"></i>View on GitHub</a>
             </div>
 
             <div class="drawer">
@@ -390,7 +319,7 @@
                     <li>HTML</li>
                     <li>CSS</li>
                 </ul>
-                <a href="https://github.com/VladimirV99/Marker" class="btn"><i class="mr fab fa-github"></i>View on GitHub</a>
+                <a href="https://github.com/VladimirV99/Marker" target="_blank" class="btn"><i class="mr fab fa-github"></i>View on GitHub</a>
             </div>
 
             <div class="drawer">
@@ -469,7 +398,7 @@
                     <li>HTML</li>
                     <li>SCSS</li>
                 </ul>
-                <a href="https://github.com/VladimirV99/Blog" class="btn"><i class="mr fab fa-github"></i>View on GitHub</a>
+                <a href="https://github.com/VladimirV99/Blog" target="_blank" class="btn"><i class="mr fab fa-github"></i>View on GitHub</a>
             </div>
 
             <div class="drawer">
@@ -550,7 +479,7 @@
                     <li>HTML</li>
                     <li>CSS</li>
                 </ul>
-                <a href="https://github.com/VladimirV99/Markdown" class="btn"><i class="mr fab fa-github"></i>View on GitHub</a>
+                <a href="https://github.com/VladimirV99/Markdown" target="_blank" class="btn"><i class="mr fab fa-github"></i>View on GitHub</a>
             </div>
 
             <div class="drawer">
@@ -593,6 +522,163 @@
 
         <article class="panel">
             <div class="panel-header">
+                <h3 class="panel-title">MultiFrame</h3>
+                <p>
+                    MultiFrame is a cross-platform obstacle avoidance game where you control multiple entities at the same time.
+                </p>
+                <ul class="tags">
+                    <li>Java</li>
+                    <li>libGDX</li>
+                    <li>Game</li>
+                    <li>Desktop</li>
+                    <li>Android</li>
+                </ul>
+                <a href="https://github.com/VladimirV99/MultiFrame" target="_blank" class="btn"><i class="mr fab fa-github"></i>View on GitHub</a>
+            </div>
+
+            <div class="drawer">
+                <div id="multiframe" class="slideshow">
+                    <!-- Slides -->
+                    <div class="slide">
+                        <div class="slide-number">1 / 4</div>
+                        <img src="projects/multiframe/gameplay.png">
+                    </div>
+                    
+                    <div class="slide">
+                        <div class="slide-number">2 / 4</div>
+                        <img src="projects/multiframe/main_menu.png">
+                    </div>
+
+                    <div class="slide">
+                        <div class="slide-number">3 / 4</div>
+                        <img src="projects/multiframe/mode_select.png">
+                    </div>
+
+                    <div class="slide">
+                        <div class="slide-number">4 / 4</div>
+                        <img src="projects/multiframe/mode_config.png">
+                    </div>
+    
+                    <!-- Navigation buttons -->
+                    <a class="prev" onclick="multiframe.prev()">&#10094;</a>
+                    <a class="next" onclick="multiframe.next()">&#10095;</a>
+    
+                    <!-- Caption -->
+                    <div class="caption-container">
+                        <p class="caption"></p>
+                    </div>
+    
+                    <!-- Thumbnails -->
+                    <div class="thumbnail-row">
+                        <div class="thumbnail-column">
+                            <img class="thumbnail" src="projects/multiframe/gameplay.png" onclick="multiframe.set(0)" alt="Dual Frame Mode Gameplay">
+                        </div>
+                        <div class="thumbnail-column">
+                            <img class="thumbnail" src="projects/multiframe/main_menu.png" onclick="multiframe.set(1)" alt="Main Menu">
+                        </div>
+                        <div class="thumbnail-column">
+                            <img class="thumbnail" src="projects/multiframe/mode_select.png" onclick="multiframe.set(2)" alt="Mode Select Screen">
+                        </div>
+                        <div class="thumbnail-column">
+                            <img class="thumbnail" src="projects/multiframe/mode_config.png" onclick="multiframe.set(3)" alt="Dual Frame Custom Configuration">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                Show more
+            </div>
+        </article>
+
+        <article class="panel">
+            <div class="panel-header">
+                <h3 class="panel-title">Android File Manager</h3>
+                <p>
+                    This is an implementation of a file manager for Android.
+                    It includes launchers for basic file types like text, image, audio and video files.
+                    Other files can be opened using appropriate apps installed on the system.
+                    The app supports two themes: light and dark which can be set manually or using the system dark mode on Android 10+
+                </p>
+                <ul class="tags">
+                    <li>Kotlin</li>
+                    <li>Android</li>
+                    <li>Material</li>
+                    <li>Jetpack</li>
+                </ul>
+                <a href="https://github.com/VladimirV99/AndroidFileManager" target="_blank" class="btn"><i class="mr fab fa-github"></i>View on GitHub</a>
+            </div>
+
+            <div class="drawer">
+                <div id="filemanager" class="slideshow">
+                    <!-- Slides -->
+                    <div class="slide">
+                        <div class="slide-number">1 / 4</div>
+                        <img src="projects/filemanager/theme_light.png">
+                    </div>
+                    
+                    <div class="slide">
+                        <div class="slide-number">2 / 4</div>
+                        <img src="projects/filemanager/theme_dark.png">
+                    </div>
+    
+                    <div class="slide">
+                        <div class="slide-number">3 / 4</div>
+                        <img src="projects/filemanager/navigation.png">
+                    </div>
+                    
+                    <div class="slide">
+                        <div class="slide-number">4 / 4</div>
+                        <img src="projects/filemanager/selection.png">
+                    </div>
+
+                    <!-- Navigation buttons -->
+                    <a class="prev" onclick="filemanager.prev()">&#10094;</a>
+                    <a class="next" onclick="filemanager.next()">&#10095;</a>
+    
+                    <!-- Caption -->
+                    <div class="caption-container">
+                        <p class="caption"></p>
+                    </div>
+    
+                    <!-- Thumbnails -->
+                    <div class="thumbnail-row">
+                        <div class="thumbnail-column">
+                            <img class="thumbnail" src="projects/filemanager/theme_light.png" onclick="filemanager.set(0)" alt="Light Theme UI">
+                        </div>
+                        <div class="thumbnail-column">
+                            <img class="thumbnail" src="projects/filemanager/theme_dark.png" onclick="filemanager.set(1)" alt="Dark Theme UI">
+                        </div>
+                        <div class="thumbnail-column">
+                            <img class="thumbnail" src="projects/filemanager/navigation.png" onclick="filemanager.set(2)" alt="Navigation Menu">
+                        </div>
+                        <div class="thumbnail-column">
+                            <img class="thumbnail" src="projects/filemanager/selection.png" onclick="filemanager.set(3)" alt="File Selection Mode">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                Show more
+            </div>
+        </article>
+
+        <article class="panel">
+            <div class="panel-header">
+                <h3 class="panel-title">Arduino Projects</h3>
+                <p>
+                    A collection of Arduino based projects that demonstrate the usage of various sensors and components.
+                </p>
+                <ul class="tags">
+                    <li>Arduino</li>
+                    <li>C++</li>
+                    <li>Python</li>
+                </ul>
+                <a href="https://github.com/VladimirV99/Arduino-Projects" target="_blank" class="btn"><i class="mr fab fa-github"></i>View on GitHub</a>
+            </div>
+        </article>
+
+        <article class="panel">
+            <div class="panel-header">
                 <h3 class="panel-title">Spring Pendulum</h3>
                 <p>
                     A collection of physics simulations of a pendulum on a spring
@@ -603,7 +689,7 @@
                     <li>Unity</li>
                     <li>C#</li>
                 </ul>
-                <a href="https://github.com/VladimirV99/Spring-Pendulum" class="btn"><i class="mr fab fa-github"></i>View on GitHub</a>
+                <a href="https://github.com/VladimirV99/Spring-Pendulum" target="_blank" class="btn"><i class="mr fab fa-github"></i>View on GitHub</a>
             </div>
 
             <div class="drawer">

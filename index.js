@@ -26,7 +26,8 @@ for (let i = 0; i < accordion.length; i++) {
 }
 
 // Slideshows
-let indexes = { 
+let indexes = {
+    'circa2020': 0,
     'portal': 0,
     'multiframe': 0,
     'filemanager': 0,
@@ -37,8 +38,8 @@ let indexes = {
     'pendulum': 0
 };
 
-for(name of Object.keys(indexes)) {
-    showSlides(name);
+for(key of Object.keys(indexes)) {
+    showSlides(key);
 }
 
 function prevSlide(name) {
@@ -77,6 +78,12 @@ function showSlides(name) {
     slides[n].style.display = 'block';
     thumbnails[n].className += ' active';
     captionText.innerHTML = thumbnails[n].alt;
+}
+
+let circa2020 = {
+    prev: () => prevSlide('circa2020'),
+    next: () => nextSlide('circa2020'),
+    set: slide => setSlide('circa2020', slide)
 }
 
 let portal = {
