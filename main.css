@@ -199,10 +199,15 @@ main {
 }
 
 .btn-icon {
-    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 1.1rem;
     border-radius: 8px;
     padding: 8px;
     margin: 0 .25rem;
+    width: 75px;
 }
 
 .slideshow {
@@ -327,6 +332,16 @@ main {
 @media screen and (max-width: 1000px) {
     .panel {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #side-nav {
+        width: 250px;
+    }
+
+    main {
+        margin-left: 250px;
     }
 }
 
