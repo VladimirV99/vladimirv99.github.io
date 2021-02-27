@@ -11,6 +11,10 @@ hr {
     border-color: grey;
 }
 
+ul {
+    padding-inline-start: 30px;
+}
+
 .center {
     text-align: center;
 }
