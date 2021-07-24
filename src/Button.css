@@ -1,0 +1,23 @@
+.btn {
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(110, 110, 110);
+    padding: 5px 8px;
+  }
+  
+  .btn:hover {
+    background-color: rgb(85, 85, 85);
+  }
+  
+  .btn-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 0 .25rem;
+    width: 80px;
+  }

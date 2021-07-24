@@ -1,0 +1,80 @@
+hr {
+  border-color: grey;
+}
+
+ul {
+  padding-inline-start: 30px;
+}
+
+.center {
+  text-align: center;
+}
+
+.colored {
+  color: rgb(62, 190, 233);
+}
+
+.fa-big {
+  font-size: 1.5rem;
+}
+
+.mr {
+  margin-right: .25rem;
+}
+
+main {
+  margin-left: 300px;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+@media screen and (max-width: 850px) {
+  main {
+    margin-left: 0px;
+  }
+}
+
+#home {
+  font-size: 3em;
+}
+
+.social-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.header {
+  text-align: center;
+}
+
+.education-item {
+  display: flex;
+}
+
+.education-info {
+  flex-grow: 1;
+}
+
+.education-info p {
+  margin-block-start: .5rem;
+  margin-block-end: .5rem;
+}
+
+.school-name {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+#contact-info {
+  margin: 0 auto;
+  font-size: 1.3em;
+}
+
+#contact-info tr {
+  line-height: 3em;
+}
+
+#contact-info td {
+  padding: 0 .25rem;
+}
