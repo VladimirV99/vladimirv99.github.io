@@ -1,0 +1,15 @@
+{
+  "short_name": "Portfolio",
+  "name": "Vladimir Vuksanovic's Portfolio",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "720x720",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
