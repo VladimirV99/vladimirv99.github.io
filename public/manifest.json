@@ -3,6 +3,11 @@
   "name": "Vladimir Vuksanovic's Portfolio",
   "icons": [
     {
+      "src": "favicon.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
       "src": "logo.png",
       "sizes": "720x720",
       "type": "image/png"
