@@ -7,7 +7,7 @@
   margin: 0 auto;
   text-align: center;
   width: 100%;
-  max-width: 800px;
+  position: relative;
 }
 
 .slide img {
@@ -17,30 +17,27 @@
 
 .prev,
 .next {
+  display: none;
   cursor: pointer;
   position: absolute;
-  top: 40%;
+  top: 50%;
   width: auto;
   padding: 16px;
-  margin-top: -50px;
+  transform: translateY(-50%);
+  border-radius: 5px;
   color: white;
   font-weight: bold;
   font-size: 20px;
   user-select: none;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .prev {
-  display: none;
   left: 0;
-  border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .next {
-  display: none;
   right: 0;
-  border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .prev:hover,
