@@ -11,15 +11,16 @@ function Slideshow(props) {
         <div className="slide-number">
           {slideIndex + 1} / {props.slides.length}
         </div>
-        <img src={currentSlide.image} alt={currentSlide.description} />
-      </div>
 
-      <span className="prev" onClick={() => setSlide((slideIndex + props.slides.length - 1) % props.slides.length)}>
-        &#10094;
-      </span>
-      <span className="next" onClick={() => setSlide((slideIndex + 1) % props.slides.length)}>
-        &#10095;
-      </span>
+        <img src={currentSlide.image} alt={currentSlide.description} />
+
+        <span className="prev" onClick={() => setSlide((slideIndex + props.slides.length - 1) % props.slides.length)}>
+          &#10094;
+        </span>
+        <span className="next" onClick={() => setSlide((slideIndex + 1) % props.slides.length)}>
+          &#10095;
+        </span>
+      </div>
 
       <div className="caption-container">
         <p className="caption">{currentSlide.description}</p>
