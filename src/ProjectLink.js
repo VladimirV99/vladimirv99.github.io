@@ -1,8 +1,8 @@
+import PropTypes from 'prop-types';
+
 import './Button.css';
 
-function ProjectLink(props) {
-  const url = props.children;
-
+function ProjectLink({ children: url }) {
   if (url.startsWith('https://github.com/')) {
     return (
       <a href={url} target="_blank" rel="noreferrer" className="btn">
@@ -23,5 +23,9 @@ function ProjectLink(props) {
     );
   }
 }
+
+ProjectLink.propTypes = {
+  children: PropTypes.string.isRequired,
+};
 
 export default ProjectLink;

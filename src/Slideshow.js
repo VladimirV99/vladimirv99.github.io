@@ -1,23 +1,25 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+
 import './Slideshow.css';
 
-function Slideshow(props) {
+function Slideshow({ slides }) {
   const [slideIndex, setSlide] = useState(0);
-  const currentSlide = props.slides[slideIndex];
+  const currentSlide = slides[slideIndex];
 
   return (
     <div className="slideshow">
       <div className="slide">
         <div className="slide-number">
-          {slideIndex + 1} / {props.slides.length}
+          {slideIndex + 1} / {slides.length}
         </div>
 
         <img src={currentSlide.image} alt={currentSlide.description} />
 
-        <span className="prev" onClick={() => setSlide((slideIndex + props.slides.length - 1) % props.slides.length)}>
+        <span className="prev" onClick={() => setSlide((slideIndex + slides.length - 1) % slides.length)}>
           &#10094;
         </span>
-        <span className="next" onClick={() => setSlide((slideIndex + 1) % props.slides.length)}>
+        <span className="next" onClick={() => setSlide((slideIndex + 1) % slides.length)}>
           &#10095;
         </span>
       </div>
@@ -27,7 +29,7 @@ function Slideshow(props) {
       </div>
 
       <div className="thumbnail-row">
-        {props.slides.map((slide, i) => {
+        {slides.map((slide, i) => {
           return (
             <div key={i} className="thumbnail-column">
               <img
@@ -43,5 +45,14 @@ function Slideshow(props) {
     </div>
   );
 }
+
+Slideshow.propTypes = {
+  slides: PropTypes.arrayOf(
+    PropTypes.shape({
+      image: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+    })
+  ),
+};
 
 export default Slideshow;

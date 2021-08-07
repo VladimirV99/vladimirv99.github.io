@@ -1,31 +1,34 @@
-import React, { Fragment, useState } from 'react';
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 import ProjectLink from './ProjectLink';
 import Slideshow from './Slideshow';
 
 import './Project.css';
 
-function Project(props) {
+function Project({ name, description, tags, url, slides }) {
   const [showDropdown, setShowDropdown] = useState(false);
   const drawerClass = 'drawer' + (showDropdown ? ' active' : '');
 
   return (
     <article className="panel">
-      <div className="panel-header">
-        <h3 className="panel-title">{props.name}</h3>
-        <p>{props.description}</p>
-        <ul className="tags">
-          {props.tags.map((tag, i) => {
-            return <li key={i}>{tag}</li>;
-          })}
-        </ul>
-        <ProjectLink>{props.url}</ProjectLink>
+      <div className="panel-main">
+        <h3 className="panel-title">{name}</h3>
+        {description && <p>{description}</p>}
+        {tags && (
+          <ul className="tags">
+            {tags.map((tag, i) => {
+              return <li key={i}>{tag}</li>;
+            })}
+          </ul>
+        )}
+        {url && <ProjectLink>{url}</ProjectLink>}
       </div>
 
-      {props.slides ? (
-        <Fragment>
+      {slides && (
+        <div className="panel-extra">
           <div className={drawerClass}>
-            <Slideshow slides={props.slides}></Slideshow>
+            <Slideshow slides={slides}></Slideshow>
           </div>
 
           {showDropdown ? (
@@ -37,10 +40,23 @@ function Project(props) {
               Show more
             </div>
           )}
-        </Fragment>
-      ) : null}
+        </div>
+      )}
     </article>
   );
 }
+
+Project.propTypes = {
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string,
+  tags: PropTypes.arrayOf(PropTypes.string),
+  url: PropTypes.string,
+  slides: PropTypes.arrayOf(
+    PropTypes.shape({
+      image: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+    })
+  ),
+};
 
 export default Project;
