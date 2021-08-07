@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import './Button.css';
+import '../Button.css';
 
 function ProjectLink({ children: url }) {
   if (url.startsWith('https://github.com/')) {

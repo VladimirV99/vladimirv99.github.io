@@ -1,0 +1,12 @@
+#contact-info {
+  margin: 0 auto;
+  font-size: 1.3em;
+}
+
+#contact-info tr {
+  line-height: 3em;
+}
+
+#contact-info td {
+  padding: 0 0.25rem;
+}

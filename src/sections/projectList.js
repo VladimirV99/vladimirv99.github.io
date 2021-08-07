@@ -1,4 +1,4 @@
-const projects = [
+const projectList = [
   {
     name: 'Circa2020',
     description:
@@ -191,4 +191,4 @@ const projects = [
   },
 ];
 
-export default projects;
+export default projectList;

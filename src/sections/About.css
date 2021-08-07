@@ -1,0 +1,14 @@
+#name {
+  font-size: 3em;
+}
+
+.header {
+  text-align: center;
+  font-size: 32px;
+}
+
+.social-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
