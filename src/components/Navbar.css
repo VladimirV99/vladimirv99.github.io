@@ -6,7 +6,7 @@ nav {
   width: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
   align-items: stretch;
   position: fixed;
@@ -16,11 +16,24 @@ nav {
   z-index: 1;
 }
 
+.nav-profile {
+  margin: 1rem 0rem;
+}
+
+.nav-profile p {
+  color: white;
+  margin: 0.2rem;
+}
+
 .profile-photo {
   width: 180px;
   margin: 1rem auto;
   border: 5px solid cornflowerblue;
   border-radius: 50%;
+}
+
+.profile-name {
+  font-size: 1.2rem;
 }
 
 .nav-menu {
@@ -31,8 +44,11 @@ nav {
   text-align: center;
 }
 
-.nav-toggle {
+.nav-bar {
   display: none;
+}
+
+.nav-toggle {
   color: white;
   text-decoration: none;
   font-size: 2em;
@@ -58,17 +74,20 @@ nav {
   color: rgb(62, 190, 233);
 }
 
+.nav-footer {
+  margin: 3rem 2rem 1rem 2rem;
+}
+
 @media screen and (max-width: 850px) {
   #main-nav {
     display: block;
     width: unset;
     height: unset;
-    position: unset;
-    border-bottom: 1px solid #212121;
+    position: relative;
   }
 
-  .nav-toggle {
-    display: unset;
+  .nav-profile {
+    margin-top: 0rem;
   }
 
   .nav-bar {
@@ -76,18 +95,24 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding-inline-start: 1rem;
+    border-top: 1px solid #262626;
+    border-bottom: 1px solid #262626;
   }
 
   .nav-extend {
     display: block;
   }
 
+  .nav-footer {
+    display: none;
+  }
+
   .profile-photo {
     width: unset;
-    margin: unset;
+    margin: 1rem;
     border: unset;
-    height: 40px;
-    margin-left: 1.5rem;
+    height: 140px;
   }
 
   .dropdown-toggle {

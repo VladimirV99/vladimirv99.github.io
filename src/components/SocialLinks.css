@@ -1,0 +1,18 @@
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+  padding-left: unset;
+}
+
+.social-link {
+  padding: 0rem 0.5rem;
+  font-size: 1.4rem;
+  color: #ffffffa0;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  color: #ffffff;
+}
