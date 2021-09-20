@@ -54,9 +54,9 @@ Project.propTypes = {
   slides: PropTypes.arrayOf(
     PropTypes.shape({
       image: PropTypes.string.isRequired,
-      description: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired
     })
-  ),
+  )
 };
 
 export default Project;

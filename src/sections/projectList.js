@@ -8,28 +8,28 @@ const projectList = [
     slides: [
       {
         image: 'projects/circa2020/sr_latch.png',
-        description: 'SR latch example',
+        description: 'SR latch example'
       },
       {
         image: 'projects/circa2020/components.png',
-        description: 'Component list',
+        description: 'Component list'
       },
       {
         image: 'projects/circa2020/rotate_resize.png',
-        description: 'Rotating and resizing components',
+        description: 'Rotating and resizing components'
       },
       {
         image: 'projects/circa2020/composite.png',
-        description: 'Custom component created from existing circuit',
-      },
-    ],
+        description: 'Custom component created from existing circuit'
+      }
+    ]
   },
   {
     name: 'Automatic Translation',
     description:
       'Language translation using a sequence-to-sequence LSTM neural network. This project was made for the computer intelligence course at the Faculty of Mathematics, University of Belgrade.',
     tags: ['Python', 'Tensorflow', 'Jupyter-Notebook'],
-    url: 'https://github.com/VladimirV99/Automatic-Translation',
+    url: 'https://github.com/VladimirV99/Automatic-Translation'
   },
   {
     name: 'Portal',
@@ -40,14 +40,14 @@ const projectList = [
     slides: [
       {
         image: 'projects/portal/recursive.png',
-        description: 'Recursive portal rendering and player model',
+        description: 'Recursive portal rendering and player model'
       },
       {
         image: 'projects/portal/companion_cube.png',
-        description: 'Companion cube',
+        description: 'Companion cube'
       },
-      { image: 'projects/portal/cake.png', description: 'The cake is a lie' },
-    ],
+      { image: 'projects/portal/cake.png', description: 'The cake is a lie' }
+    ]
   },
   {
     name: 'Alas',
@@ -60,10 +60,10 @@ const projectList = [
       { image: 'projects/alas/converter.png', description: 'Base converter' },
       {
         image: 'projects/alas/arithmetics.png',
-        description: 'Hardware arithmetics',
+        description: 'Hardware arithmetics'
       },
-      { image: 'projects/alas/ieee754.png', description: 'IEEE754 converter' },
-    ],
+      { image: 'projects/alas/ieee754.png', description: 'IEEE754 converter' }
+    ]
   },
   {
     name: 'Marker',
@@ -73,16 +73,16 @@ const projectList = [
     slides: [
       {
         image: 'projects/marker/theme_light.png',
-        description: 'Light Theme UI',
+        description: 'Light Theme UI'
       },
       { image: 'projects/marker/theme_dark.png', description: 'Dark Theme UI' },
       { image: 'projects/marker/thread.png', description: 'Thread' },
       {
         image: 'projects/marker/profile_page.png',
-        description: 'Edit Profile Page',
+        description: 'Edit Profile Page'
       },
-      { image: 'projects/marker/user_page.png', description: 'User Page' },
-    ],
+      { image: 'projects/marker/user_page.png', description: 'User Page' }
+    ]
   },
   {
     name: 'Markdown',
@@ -92,8 +92,8 @@ const projectList = [
     url: 'https://github.com/VladimirV99/Markdown',
     slides: [
       { image: 'projects/markdown/write.png', description: 'Write page' },
-      { image: 'projects/markdown/preview.png', description: 'Preview page' },
-    ],
+      { image: 'projects/markdown/preview.png', description: 'Preview page' }
+    ]
   },
   {
     name: 'Blog',
@@ -103,22 +103,22 @@ const projectList = [
     slides: [
       {
         image: 'projects/blog/home_light.png',
-        description: 'Home page light theme',
+        description: 'Home page light theme'
       },
       {
         image: 'projects/blog/home_dark.png',
-        description: 'Home page dark theme',
+        description: 'Home page dark theme'
       },
       {
         image: 'projects/blog/write.png',
-        description: 'Post write page with a markdown editor',
+        description: 'Post write page with a markdown editor'
       },
       {
         image: 'projects/blog/post.png',
-        description: 'Post view with comments and replies',
+        description: 'Post view with comments and replies'
       },
-      { image: 'projects/blog/posts.png', description: "User's post list" },
-    ],
+      { image: 'projects/blog/posts.png', description: "User's post list" }
+    ]
   },
   {
     name: 'MultiFrame',
@@ -129,18 +129,18 @@ const projectList = [
     slides: [
       {
         image: 'projects/multiframe/gameplay.png',
-        description: 'Dual Frame Mode Gameplay',
+        description: 'Dual Frame Mode Gameplay'
       },
       { image: 'projects/multiframe/main_menu.png', description: 'Main Menu' },
       {
         image: 'projects/multiframe/mode_select.png',
-        description: 'Mode Select Screen',
+        description: 'Mode Select Screen'
       },
       {
         image: 'projects/multiframe/mode_config.png',
-        description: 'Dual Frame Custom Configuration',
-      },
-    ],
+        description: 'Dual Frame Custom Configuration'
+      }
+    ]
   },
   {
     name: 'Android File Manager',
@@ -151,27 +151,27 @@ const projectList = [
     slides: [
       {
         image: 'projects/filemanager/theme_light.png',
-        description: 'Light Theme UI',
+        description: 'Light Theme UI'
       },
       {
         image: 'projects/filemanager/theme_dark.png',
-        description: 'Dark Theme UI',
+        description: 'Dark Theme UI'
       },
       {
         image: 'projects/filemanager/navigation.png',
-        description: 'Navigation Menu',
+        description: 'Navigation Menu'
       },
       {
         image: 'projects/filemanager/selection.png',
-        description: 'File Selection Mode',
-      },
-    ],
+        description: 'File Selection Mode'
+      }
+    ]
   },
   {
     name: 'Arduino Projects',
     description: 'A collection of Arduino based projects that demonstrate the usage of various sensors and components.',
     tags: ['Arduino', 'C++', 'Python'],
-    url: 'https://github.com/VladimirV99/Arduino-Projects',
+    url: 'https://github.com/VladimirV99/Arduino-Projects'
   },
   {
     name: 'Spring Pendulum',
@@ -181,14 +181,14 @@ const projectList = [
     slides: [
       {
         image: 'projects/spring_pendulum/python_default.png',
-        description: 'Python simulation from default position',
+        description: 'Python simulation from default position'
       },
       {
         image: 'projects/spring_pendulum/python_stretched.png',
-        description: 'Python simulation when stretched',
-      },
-    ],
-  },
+        description: 'Python simulation when stretched'
+      }
+    ]
+  }
 ];
 
 export default projectList;
