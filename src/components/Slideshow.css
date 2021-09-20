@@ -61,6 +61,7 @@
   position: absolute;
   top: 10px;
   left: 10px;
+  min-width: 25px;
 }
 
 .slide:hover .slide-number {

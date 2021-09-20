@@ -14,7 +14,7 @@ function Project({ name, description, tags, url, slides }) {
     <article className="panel">
       <div className="panel-main">
         <h3 className="panel-title">{name}</h3>
-        {description && <p>{description}</p>}
+        {description && <p className="justify">{description}</p>}
         {tags && (
           <ul className="tags">
             {tags.map((tag, i) => {
