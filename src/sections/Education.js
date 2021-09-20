@@ -12,12 +12,22 @@ function Education() {
           <div className="education-item">
             <div className="education-info">
               <p className="school-name">Faculty of Mathematics, University of Belgrade</p>
-              <p>Undergraduate studies, Informatics</p>
-              <p>Fourth year</p>
-              <p>GPA 9.83/10.00</p>
+              <p>Master studies, Informatics</p>
             </div>
             <p className="colored">
-              <i className="far fa-calendar-alt"></i> 2017-now
+              <i className="far fa-calendar-alt"></i> 2021-now
+            </p>
+          </div>
+        </li>
+        <li>
+          <div className="education-item">
+            <div className="education-info">
+              <p className="school-name">Faculty of Mathematics, University of Belgrade</p>
+              <p>Undergraduate studies, Informatics</p>
+              <p>GPA 9.88/10.00</p>
+            </div>
+            <p className="colored">
+              <i className="far fa-calendar-alt"></i> 2017-2021
             </p>
           </div>
         </li>
@@ -32,16 +42,16 @@ function Education() {
             </p>
           </div>
         </li>
-        <li>
+        {/* <li>
           <div className="education-item">
             <div className="education-info">
-              <p className="school-name">Osnovna škola "Slobodan Sekulić"</p>
+              <p className="school-name">Elementary School "Slobodan Sekulić"</p>
             </div>
             <p className="colored">
               <i className="far fa-calendar-alt"></i> 2005-2013
             </p>
           </div>
-        </li>
+        </li> */}
       </ul>
     </Fragment>
   );
