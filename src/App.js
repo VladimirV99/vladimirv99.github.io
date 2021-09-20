@@ -13,11 +13,11 @@ function App() {
       <Navbar></Navbar>
 
       <main>
-        <section id="home">
+        <section id="about">
           <About />
         </section>
 
-        {/* <hr /> */}
+        <hr />
 
         <section id="education">
           <Education />

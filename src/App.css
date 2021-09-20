@@ -11,6 +11,10 @@ ul {
   text-align: center;
 }
 
+.justify {
+  text-align: justify;
+}
+
 .colored {
   color: rgb(62, 190, 233);
 }
@@ -31,9 +35,15 @@ main {
 
 section {
   /* min-height: 500px; */
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.header {
+  text-align: center;
+  font-size: 32px;
 }
 
 @media screen and (max-width: 850px) {

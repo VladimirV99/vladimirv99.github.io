@@ -5,11 +5,15 @@ import './About.css';
 function About() {
   return (
     <Fragment>
-      <hr />
+      <h1 className="header">About</h1>
 
-      <h1 id="name" className="header">
-        Vladimir <span className="colored">Vuksanović</span>
-      </h1>
+      <p className="justify">
+        My name is Vladimir and I was born on January 2nd 1999. in Užice, Serbia but today I live in Belgrade. I have a
+        bachelor's degree in informatics from the Faculty of Mathematics in Belgrade and I'm currently working on
+        getting a master's degree. I have developed web (MEAN, MERN stack), desktop (C++) and Android (Java, Kotlin)
+        apps by myself and in a group environment. My hobbies include tinkering with electronics (Arduino, ESP32 and
+        Raspberry Pi) and Game Development.
+      </p>
 
       <hr />
 
@@ -27,8 +31,6 @@ function About() {
           <i className="fab fa-gitlab"></i> Gitlab
         </a>
       </div>
-
-      <hr />
     </Fragment>
   );
 }
