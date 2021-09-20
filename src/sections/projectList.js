@@ -1,5 +1,18 @@
 const projectList = [
   {
+    name: 'Dagger',
+    description:
+      'Dagger is a fully-featured, modern game engine made for educational purposes by the Ubisoft Belgrade team. It was used for a C++ game development course at the Faculty of Mathematics in Belgrade where each team had 2 months to make a small playable game.',
+    tags: ['C++', 'OpenGL', 'GLFW', 'EnTT', 'ImGui', 'ASIO', 'Meson'],
+    url: 'https://github.com/VladimirV99/Dagger',
+    slides: [
+      { image: 'projects/dagger/city_level.png', description: 'City Level' },
+      { image: 'projects/dagger/factory_level.png', description: 'Factory Level' },
+      { image: 'projects/dagger/pause_menu.png', description: 'Pause Menu' },
+      { image: 'projects/dagger/game_over.png', description: 'Game Over Screen' }
+    ]
+  },
+  {
     name: 'Circa2020',
     description:
       'Circa2020 is a tool for designing and simulating logic circuits. It supports all basic components (gates, plexers, memory, ...), saving and loading files, custom components and a lot of other useful features.',
@@ -87,7 +100,7 @@ const projectList = [
   {
     name: 'Markdown',
     description:
-      'A lightweight JavaScript Markdown to HTML converter based on showdown. It includes a GitHub-like markdown editor for easier styling and previewing the HTML.',
+      'A lightweight JavaScript Markdown to HTML converter based on showdown library. It includes a GitHub-like markdown editor for easier styling and previewing the HTML.',
     tags: ['JavaScript', 'Node', 'Webpack', 'Mocha', 'Chai', 'HTML', 'CSS'],
     url: 'https://github.com/VladimirV99/Markdown',
     slides: [
