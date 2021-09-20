@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import ProjectLink from './ProjectLink';
 import Slideshow from './Slideshow';
 
-import './Project.css';
+import './Project.scss';
 
 function Project({ name, description, tags, url, slides }) {
   const [showDropdown, setShowDropdown] = useState(false);

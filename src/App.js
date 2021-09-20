@@ -1,5 +1,5 @@
-import './App.css';
-import './Button.css';
+import './App.scss';
+import './Button.scss';
 
 import Navbar from './components/Navbar';
 import About from './sections/About';

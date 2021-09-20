@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-import './Slideshow.css';
+import './Slideshow.scss';
 
 function Slideshow({ slides }) {
   const [slideIndex, setSlide] = useState(0);

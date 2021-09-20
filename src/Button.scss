@@ -1,13 +1,15 @@
+@import './Colors.scss';
+
 .btn {
   text-decoration: none;
-  color: white;
+  color: $buttonTextColor;
   border-radius: 5px;
-  background-color: rgb(110, 110, 110);
+  background-color: $buttonBackColor;
   padding: 5px 8px;
-}
 
-.btn:hover {
-  background-color: rgb(85, 85, 85);
+  &:hover {
+    background-color: darken($buttonBackColor, 5);
+  }
 }
 
 .btn-icon {

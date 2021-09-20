@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import SocialLinks from './SocialLinks';
-import './Navbar.css';
+import './Navbar.scss';
 
 function Navbar() {
   const [showDropdown, setShowDropdown] = useState(false);
   let dropdownClass = 'nav-menu dropdown-toggle' + (showDropdown ? ' show' : '');
   return (
-    <nav id="main-nav">
+    <nav>
       <div className="nav-profile">
         <img className="profile-photo" src="avatar.png" alt="avatar" />
         <p className="profile-name">

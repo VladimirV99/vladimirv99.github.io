@@ -1,3 +1,5 @@
+@import '../Colors.scss';
+
 .socials {
   display: flex;
   flex-direction: row;
@@ -9,10 +11,10 @@
 .social-link {
   padding: 0rem 0.5rem;
   font-size: 1.4rem;
-  color: #ffffffa0;
+  color: rgba($textColor, 0.8);
   text-decoration: none;
-}
 
-.social-link:hover {
-  color: #ffffff;
+  &:hover {
+    color: $textColor;
+  }
 }

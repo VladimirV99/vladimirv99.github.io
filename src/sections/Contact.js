@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 
-import './Contact.css';
+import './Contact.scss';
 
 function Contact() {
   return (

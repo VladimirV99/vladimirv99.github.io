@@ -1,6 +1,8 @@
+@import '../Colors.scss';
+
 .panel {
-  background-color: #181818;
-  color: white;
+  background-color: $primaryColor;
+  color: $textColor;
   width: 95%;
   font-size: 15px;
   margin: 1rem auto;
@@ -17,12 +19,12 @@
 }
 
 .panel-extra {
-  border-top: 1px solid rgb(53, 53, 53);
+  border-top: 1px solid $backgroundColor;
 }
 
 .accordion {
-  background-color: #181818;
-  color: white;
+  background-color: $primaryColor;
+  color: $textColor;
   cursor: pointer;
   padding: 10px;
   width: 100%;
@@ -36,20 +38,20 @@
 
 .accordion:hover,
 .accordion.active {
-  background-color: #151515;
+  background-color: darken($primaryColor, 1);
 }
 
 .drawer {
   margin: 0 0.25rem;
   padding: 0 10px;
-  background-color: #252525;
+  background-color: $backgroundColor;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease-out;
-}
 
-.drawer.active {
-  max-height: 1000px;
+  &.active {
+    max-height: 1000px;
+  }
 }
 
 .tags {
@@ -57,12 +59,13 @@
   padding: 0;
   display: flex;
   flex-direction: row;
-}
 
-.tags li {
-  background-color: rgb(42, 167, 209);
-  padding: 3px 5px;
-  border-radius: 5px;
-  margin: 0 2px;
-  cursor: default;
+  li {
+    color: $tagTextColor;
+    background-color: $tagBackColor;
+    padding: 3px 5px;
+    border-radius: 5px;
+    margin: 0 2px;
+    cursor: default;
+  }
 }

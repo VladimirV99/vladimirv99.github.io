@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 
-import './Education.css';
+import './Education.scss';
 
 function Education() {
   return (

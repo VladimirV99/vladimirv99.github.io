@@ -1,5 +1,11 @@
+@import './Colors.scss';
+
+body {
+  background-color: $backgroundColor;
+}
+
 hr {
-  border-color: grey;
+  border-color: $separatorColor;
   margin: 8px 0;
 }
 
@@ -16,7 +22,7 @@ ul {
 }
 
 .colored {
-  color: rgb(62, 190, 233);
+  color: $accentColor;
 }
 
 .fa-big {
@@ -30,7 +36,7 @@ ul {
 main {
   margin-left: 300px;
   padding: 1rem 2rem;
-  color: white;
+  color: $textColor;
 }
 
 section {
