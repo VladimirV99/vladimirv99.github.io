@@ -41,47 +41,13 @@ const projectList = [
     name: 'Automatic Translation',
     description:
       'Language translation using a sequence-to-sequence LSTM neural network. This project was made for the computer intelligence course at the Faculty of Mathematics, University of Belgrade.',
-    tags: ['Python', 'Tensorflow', 'Jupyter-Notebook'],
+    tags: ['Machine Learning', 'Python', 'TensorFlow', 'Jupyter-Notebook'],
     url: 'https://github.com/VladimirV99/Automatic-Translation'
-  },
-  {
-    name: 'Portal',
-    description:
-      'A portal like game written from scratch in C and OpenGL using the freeGLUT library. It contains a single level you traverse by firing and walking through portals. This game was made for the computer graphics course at the Faculty of Mathematics, University of Belgrade.',
-    tags: ['C', 'OpenGL', 'freeGLUT', 'Makefile'],
-    url: 'https://github.com/VladimirV99/Portal',
-    slides: [
-      {
-        image: 'projects/portal/recursive.png',
-        description: 'Recursive portal rendering and player model'
-      },
-      {
-        image: 'projects/portal/companion_cube.png',
-        description: 'Companion cube'
-      },
-      { image: 'projects/portal/cake.png', description: 'The cake is a lie' }
-    ]
-  },
-  {
-    name: 'Alas',
-    description:
-      'Alas is my personal website made for the student server at the Faculty of Mathematics, University of Belgrade. The webiste is hosted at http://alas.matf.bg.ac.rs/~mi17145.',
-    tags: ['JavaScript', 'Node', 'Webpack', 'Mocha', 'Chai', 'HTML', 'CSS'],
-    url: 'https://github.com/VladimirV99/Alas',
-    slides: [
-      { image: 'projects/alas/home.png', description: 'Home page' },
-      { image: 'projects/alas/converter.png', description: 'Base converter' },
-      {
-        image: 'projects/alas/arithmetics.png',
-        description: 'Hardware arithmetics'
-      },
-      { image: 'projects/alas/ieee754.png', description: 'IEEE754 converter' }
-    ]
   },
   {
     name: 'Marker',
     description: 'Marker is a forum designed for college students to help each other in solving problems and learning.',
-    tags: ['JavaScript', 'Node', 'React', 'MySQL', 'Redis', 'HTML', 'CSS'],
+    tags: ['JavaScript', 'Node.js', 'React', 'MySQL', 'Redis', 'HTML', 'CSS'],
     url: 'https://github.com/VladimirV99/Marker',
     slides: [
       {
@@ -98,20 +64,9 @@ const projectList = [
     ]
   },
   {
-    name: 'Markdown',
-    description:
-      'A lightweight JavaScript Markdown to HTML converter based on showdown library. It includes a GitHub-like markdown editor for easier styling and previewing the HTML.',
-    tags: ['JavaScript', 'Node', 'Webpack', 'Mocha', 'Chai', 'HTML', 'CSS'],
-    url: 'https://github.com/VladimirV99/Markdown',
-    slides: [
-      { image: 'projects/markdown/write.png', description: 'Write page' },
-      { image: 'projects/markdown/preview.png', description: 'Preview page' }
-    ]
-  },
-  {
     name: 'Blog',
     description: 'A blog website built using MEAN stack.',
-    tags: ['JavaScript', 'Node', 'Angular', 'MongoDB', 'HTML', 'SCSS'],
+    tags: ['JavaScript', 'Node.js', 'Angular', 'MongoDB', 'HTML', 'SCSS'],
     url: 'https://github.com/VladimirV99/Blog',
     slides: [
       {
@@ -134,10 +89,55 @@ const projectList = [
     ]
   },
   {
+    name: 'Alas',
+    description:
+      'Alas is my personal website made for the student server at the Faculty of Mathematics, University of Belgrade. The webiste is hosted at http://alas.matf.bg.ac.rs/~mi17145.',
+    tags: ['JavaScript', 'Node.js', 'Webpack', 'Mocha', 'Chai', 'HTML', 'CSS'],
+    url: 'https://github.com/VladimirV99/Alas',
+    slides: [
+      { image: 'projects/alas/home.png', description: 'Home page' },
+      { image: 'projects/alas/converter.png', description: 'Base converter' },
+      {
+        image: 'projects/alas/arithmetics.png',
+        description: 'Hardware arithmetics'
+      },
+      { image: 'projects/alas/ieee754.png', description: 'IEEE754 converter' }
+    ]
+  },
+  {
+    name: 'Markdown',
+    description:
+      'A lightweight JavaScript Markdown to HTML converter based on showdown library. It includes a GitHub-like markdown editor for easier styling and previewing the HTML.',
+    tags: ['JavaScript', 'Node.js', 'Webpack', 'Mocha', 'Chai', 'HTML', 'CSS'],
+    url: 'https://github.com/VladimirV99/Markdown',
+    slides: [
+      { image: 'projects/markdown/write.png', description: 'Write page' },
+      { image: 'projects/markdown/preview.png', description: 'Preview page' }
+    ]
+  },
+  {
+    name: 'Portal',
+    description:
+      'A portal like game written from scratch in C and OpenGL using the freeGLUT library. It contains a single level you traverse by firing and walking through portals. This game was made for the computer graphics course at the Faculty of Mathematics, University of Belgrade.',
+    tags: ['Game', 'C', 'OpenGL', 'freeGLUT', 'Makefile'],
+    url: 'https://github.com/VladimirV99/Portal',
+    slides: [
+      {
+        image: 'projects/portal/recursive.png',
+        description: 'Recursive portal rendering and player model'
+      },
+      {
+        image: 'projects/portal/companion_cube.png',
+        description: 'Companion cube'
+      },
+      { image: 'projects/portal/cake.png', description: 'The cake is a lie' }
+    ]
+  },
+  {
     name: 'MultiFrame',
     description:
       'MultiFrame is a cross-platform obstacle avoidance game where you control multiple entities at the same time.',
-    tags: ['Java', 'libGDX', 'Game', 'Desktop', 'Android'],
+    tags: ['Game', 'Java', 'libGDX', 'Android', 'Desktop'],
     url: 'https://github.com/VladimirV99/MultiFrame',
     slides: [
       {
@@ -159,7 +159,7 @@ const projectList = [
     name: 'Android File Manager',
     description:
       'This is an implementation of a file manager for Android. It includes launchers for basic file types like text, image, audio and video files. Other files can be opened using appropriate apps installed on the system. The app supports two themes: light and dark which can be set manually or using the system dark mode on Android 10+',
-    tags: ['Kotlin', 'Android', 'Material', 'Jetpack'],
+    tags: ['Android', 'Kotlin', 'Material', 'Jetpack'],
     url: 'https://github.com/VladimirV99/AndroidFileManager',
     slides: [
       {
@@ -183,7 +183,7 @@ const projectList = [
   {
     name: 'Arduino Projects',
     description: 'A collection of Arduino based projects that demonstrate the usage of various sensors and components.',
-    tags: ['Arduino', 'C++', 'Python'],
+    tags: ['Hardware', 'Arduino', 'Python'],
     url: 'https://github.com/VladimirV99/Arduino-Projects'
   },
   {
