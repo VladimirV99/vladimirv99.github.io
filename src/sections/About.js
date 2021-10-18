@@ -18,7 +18,7 @@ function About() {
       <hr />
 
       <div className="social-menu">
-        <a href="documents/cv.pdf" target="_blank" className="btn btn-icon">
+        <a href="documents/VladimirVuksanovicCV.pdf" target="_blank" className="btn btn-icon">
           <i className="fas fa-file"></i> Resume
         </a>
         <a href="mailto:vladevuksan99@gmail.com" className="btn btn-icon">

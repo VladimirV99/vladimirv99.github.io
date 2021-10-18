@@ -32,7 +32,7 @@ function SocialLinks() {
         </a>
       </li>
       <li>
-        <a href="documents/cv.pdf" target="_blank" title="My CV" className="social-link">
+        <a href="documents/VladimirVuksanovicCV.pdf" target="_blank" title="My CV" className="social-link">
           <i className="fas fa-file"></i>
         </a>
       </li>
