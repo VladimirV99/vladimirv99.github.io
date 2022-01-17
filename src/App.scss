@@ -35,7 +35,7 @@ ul {
 
 main {
   margin-left: 300px;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   color: $textColor;
 }
 
@@ -52,7 +52,7 @@ section {
   font-size: 32px;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
   main {
     margin-left: 0px;
   }

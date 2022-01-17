@@ -14,7 +14,14 @@ function Contact() {
               <i className="far fa-big fa-envelope"></i>
             </td>
             <td className="center">Email:</td>
-            <td>vladevuksan99@gmail.com</td>
+            <td>vvuksanovic1999@gmail.com</td>
+          </tr>
+          <tr>
+            <td className="center">
+              <i className="far fa-big fa-linkedin"></i>
+            </td>
+            <td className="center">LinkedIn:</td>
+            <td>vladimir-vuksanovic</td>
           </tr>
           <tr>
             <td className="center">

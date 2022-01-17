@@ -21,14 +21,22 @@ function About() {
         <a href="documents/VladimirVuksanovicCV.pdf" target="_blank" className="btn btn-icon">
           <i className="fas fa-file"></i> Resume
         </a>
-        <a href="mailto:vladevuksan99@gmail.com" className="btn btn-icon">
+        <a href="mailto:vvuksanovic1999@gmail.com" className="btn btn-icon">
           <i className="fas fa-envelope"></i> Email
         </a>
+        <a
+          href="https://www.linkedin.com/in/vladimir-vuksanovic/"
+          target="_blank"
+          rel="noreferrer"
+          className="btn btn-icon"
+        >
+          <i className="fab fa-linkedin"></i> LinkedIn
+        </a>
         <a href="https://github.com/VladimirV99" target="_blank" rel="noreferrer" className="btn btn-icon">
-          <i className="fab fa-github"></i> Github
+          <i className="fab fa-github"></i> GitHub
         </a>
         <a href="https://gitlab.com/VladimirV99" target="_blank" rel="noreferrer" className="btn btn-icon">
-          <i className="fab fa-gitlab"></i> Gitlab
+          <i className="fab fa-gitlab"></i> GitLab
         </a>
       </div>
     </Fragment>

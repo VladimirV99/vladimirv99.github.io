@@ -11,6 +11,17 @@ function SocialLinks() {
       </li>
       <li>
         <a
+          href="https://www.linkedin.com/in/vladimir-vuksanovic/"
+          target="_blank"
+          rel="noreferrer"
+          title="LinkedIn: vladimir-vuksanovic"
+          className="social-link"
+        >
+          <i className="fab fa-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a
           href="https://github.com/VladimirV99"
           target="_blank"
           rel="noreferrer"
