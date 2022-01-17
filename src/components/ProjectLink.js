@@ -15,6 +15,12 @@ function ProjectLink({ children: url }) {
         <i className="mr fab fa-gitlab"></i>View on GitLab
       </a>
     );
+  } else if (url.startsWith('https://bitbucket.org/')) {
+    return (
+      <a href={url} target="_blank" rel="noreferrer" className="btn">
+        <i className="mr fab fa-bitbucket"></i>View on BitBucket
+      </a>
+    );
   } else {
     return (
       <a href={url} target="_blank" rel="noreferrer" className="btn">
