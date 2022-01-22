@@ -1,39 +1,39 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import PropTypes from 'prop-types';
 
-import './Slideshow.scss';
+import styles from '@/styles/Slideshow.module.scss';
 
 function Slideshow({ slides }) {
   const [slideIndex, setSlide] = useState(0);
   const currentSlide = slides[slideIndex];
 
   return (
-    <div className="slideshow">
-      <div className="slide">
-        <div className="slide-number">
+    <div className={styles.slideshow}>
+      <div className={styles.slide}>
+        <div className={styles.slideNumber}>
           {slideIndex + 1} / {slides.length}
         </div>
 
         <img src={currentSlide.image} alt={currentSlide.description} />
 
-        <span className="prev" onClick={() => setSlide((slideIndex + slides.length - 1) % slides.length)}>
+        <span className={styles.prev} onClick={() => setSlide((slideIndex + slides.length - 1) % slides.length)}>
           &#10094;
         </span>
-        <span className="next" onClick={() => setSlide((slideIndex + 1) % slides.length)}>
+        <span className={styles.next} onClick={() => setSlide((slideIndex + 1) % slides.length)}>
           &#10095;
         </span>
       </div>
 
-      <div className="caption-container">
-        <p className="caption">{currentSlide.description}</p>
+      <div className={styles.captionContainer}>
+        <p className={styles.caption}>{currentSlide.description}</p>
       </div>
 
-      <div className="thumbnail-row">
+      <div className={styles.thumbnailRow}>
         {slides.map((slide, i) => {
           return (
-            <div key={i} className="thumbnail-column">
+            <div key={i} className={styles.thumbnailColumn}>
               <img
-                className={'thumbnail' + (slideIndex === i ? ' active' : '')}
+                className={styles.thumbnail + ' ' + (slideIndex === i ? styles.active : '')}
                 src={slide.image}
                 onClick={() => setSlide(i)}
                 alt={slide.description}

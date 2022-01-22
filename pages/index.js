@@ -1,13 +1,10 @@
-import './App.scss';
-import './Button.scss';
+import Navbar from '@/components/util/Navbar';
+import About from '@/components/sections/About';
+import Education from '@/components/sections/Education';
+import Projects from '@/components/sections/Projects';
+import Contact from '@/components/sections/Contact';
 
-import Navbar from './components/Navbar';
-import About from './sections/About';
-import Education from './sections/Education';
-import Projects from './sections/Projects';
-import Contact from './sections/Contact';
-
-function App() {
+export default function Home() {
   return (
     <div className="App">
       <Navbar></Navbar>
@@ -38,5 +35,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

@@ -1,4 +1,4 @@
-@import '../Colors.scss';
+@import "./Colors.scss";
 
 .socials {
   display: flex;
@@ -8,7 +8,7 @@
   padding-left: unset;
 }
 
-.social-link {
+.socialLink {
   padding: 0rem 0.5rem;
   font-size: 1.4rem;
   color: rgba($textColor, 0.8);

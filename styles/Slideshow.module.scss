@@ -49,7 +49,7 @@
   display: block;
 }
 
-.slide-number {
+.slideNumber {
   display: none;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 5px;
@@ -63,7 +63,7 @@
   min-width: 25px;
 }
 
-.slide:hover .slide-number {
+.slide:hover .slideNumber {
   display: block;
 }
 
@@ -75,12 +75,12 @@
   margin: 0;
 }
 
-.thumbnail-row {
+.thumbnailRow {
   display: flex;
   flex-direction: row;
 }
 
-.thumbnail-column {
+.thumbnailColumn {
   max-width: 120px;
 }
 

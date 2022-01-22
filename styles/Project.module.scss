@@ -1,4 +1,4 @@
-@import '../Colors.scss';
+@import "./Colors.scss";
 
 .panel {
   background-color: $primaryColor;
@@ -8,17 +8,17 @@
   margin: 1rem auto;
 }
 
-.panel-main {
+.panelMain {
   padding: 18px;
 }
 
-.panel-title {
+.panelTitle {
   font-size: 1.3em;
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
 
-.panel-extra {
+.panelExtra {
   border-top: 1px solid $backgroundColor;
 }
 

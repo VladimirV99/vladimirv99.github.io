@@ -1,30 +1,35 @@
 import PropTypes from 'prop-types';
-
-import '../Button.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faGitlab, faBitbucket } from '@fortawesome/free-brands-svg-icons';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 function ProjectLink({ children: url }) {
   if (url.startsWith('https://github.com/')) {
     return (
       <a href={url} target="_blank" rel="noreferrer" className="btn">
-        <i className="mr fab fa-github"></i>View on GitHub
+        <FontAwesomeIcon icon={faGithub} className="mr" />
+        View on GitHub
       </a>
     );
   } else if (url.startsWith('https://gitlab.com/')) {
     return (
       <a href={url} target="_blank" rel="noreferrer" className="btn">
-        <i className="mr fab fa-gitlab"></i>View on GitLab
+        <FontAwesomeIcon icon={faGitlab} className="mr" />
+        View on GitLab
       </a>
     );
   } else if (url.startsWith('https://bitbucket.org/')) {
     return (
       <a href={url} target="_blank" rel="noreferrer" className="btn">
-        <i className="mr fab fa-bitbucket"></i>View on BitBucket
+        <FontAwesomeIcon icon={faBitbucket} className="mr" />
+        View on BitBucket
       </a>
     );
   } else {
     return (
       <a href={url} target="_blank" rel="noreferrer" className="btn">
-        <i className="mr fas fa-globe"></i>View Website
+        <FontAwesomeIcon icon={faGlobe} className="mr" />
+        View Website
       </a>
     );
   }

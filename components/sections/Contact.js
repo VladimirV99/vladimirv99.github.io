@@ -1,45 +1,48 @@
-import { Fragment } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faGithub, faGitlab, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
-import './Contact.scss';
+import styles from '@/styles/Contact.module.scss';
 
 function Contact() {
   return (
-    <Fragment>
+    <>
       <h1 className="header">Contact Me</h1>
 
-      <table id="contact-info">
+      <table id={styles.contactInfo}>
         <tbody>
           <tr>
             <td className="center">
-              <i className="far fa-big fa-envelope"></i>
+              <FontAwesomeIcon icon={faEnvelope} size="lg" />
             </td>
             <td className="center">Email:</td>
             <td>vvuksanovic1999@gmail.com</td>
           </tr>
           <tr>
             <td className="center">
-              <i className="far fa-big fa-linkedin"></i>
+              <FontAwesomeIcon icon={faLinkedin} size="lg" />
             </td>
             <td className="center">LinkedIn:</td>
             <td>vladimir-vuksanovic</td>
           </tr>
           <tr>
             <td className="center">
-              <i className="fab fa-big fa-github"></i>
+              <FontAwesomeIcon icon={faGithub} size="lg" />
             </td>
             <td className="center">GitHub:</td>
             <td>VladimirV99</td>
           </tr>
           <tr>
             <td className="center">
-              <i className="fab fa-big fa-gitlab"></i>
+              <FontAwesomeIcon icon={faGitlab} size="lg" />
             </td>
             <td className="center">GitLab:</td>
             <td>VladimirV99</td>
           </tr>
           <tr>
             <td className="center">
-              <i className="fas fa-big fa-phone"></i>
+              <FontAwesomeIcon icon={faPhone} size="lg" />
             </td>
             <td className="center">Phone:</td>
             <td>(+381) 64 4438136</td>
@@ -53,7 +56,7 @@ function Contact() {
           </tr> */}
         </tbody>
       </table>
-    </Fragment>
+    </>
   );
 }
 

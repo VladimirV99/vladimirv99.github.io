@@ -1,6 +1,6 @@
-@import '../Colors.scss';
+@import "./Colors.scss";
 
-nav {
+.nav {
   background-color: $primaryColor;
   width: 300px;
   display: flex;
@@ -15,7 +15,7 @@ nav {
   z-index: 1;
 }
 
-.nav-profile {
+.navProfile {
   margin: 1rem 0rem;
 
   p {
@@ -23,19 +23,19 @@ nav {
     margin: 0.2rem;
   }
 
-  .profile-name {
+  .profileName {
     font-size: 1.2rem;
   }
 }
 
-.profile-photo {
+.profilePhoto {
   width: 180px;
   margin: 1rem auto;
   border: 5px solid $avatarBorderColor;
   border-radius: 50%;
 }
 
-.nav-menu {
+.navMenu {
   background-color: $primaryColor;
   list-style-type: none;
   padding: 0;
@@ -43,11 +43,11 @@ nav {
   text-align: center;
 }
 
-.nav-bar {
+.navbar {
   display: none;
 }
 
-.nav-toggle {
+.navToggle {
   color: $textColor;
   text-decoration: none;
   font-size: 2em;
@@ -60,7 +60,7 @@ nav {
   }
 }
 
-.nav-item {
+.navItem {
   display: block;
   padding: 0.75rem;
   font-size: 1.5em;
@@ -73,23 +73,23 @@ nav {
   }
 }
 
-.nav-footer {
+.navFooter {
   margin: 3rem 2rem 1rem 2rem;
 }
 
 @media screen and (max-width: 900px) {
-  nav {
+  .nav {
     display: block;
     width: unset;
     height: unset;
     position: relative;
   }
 
-  .nav-profile {
+  .navProfile {
     margin-top: 0rem;
   }
 
-  .nav-bar {
+  .navbar {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -99,22 +99,22 @@ nav {
     border-bottom: 1px solid $backgroundColor;
   }
 
-  .nav-extend {
+  .navExtend {
     display: block;
   }
 
-  .nav-footer {
+  .navFooter {
     display: none;
   }
 
-  .profile-photo {
+  .profilePhoto {
     width: unset;
     margin: 1rem;
     border: unset;
     height: 140px;
   }
 
-  .dropdown-toggle {
+  .dropdownToggle {
     position: absolute;
     left: 0;
     right: 0;

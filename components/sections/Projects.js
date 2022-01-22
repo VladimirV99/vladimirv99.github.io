@@ -1,11 +1,9 @@
-import { Fragment } from 'react';
-
-import Project from '../components/Project';
+import Project from '../util/Project';
 import projectList from './projectList';
 
 function Projects() {
   return (
-    <Fragment>
+    <>
       <h1 className="header">Projects</h1>
 
       {projectList.map((project, i) => {
@@ -20,7 +18,7 @@ function Projects() {
           ></Project>
         );
       })}
-    </Fragment>
+    </>
   );
 }
 
