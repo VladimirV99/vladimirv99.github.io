@@ -12,7 +12,7 @@ function Navbar() {
   return (
     <nav className={styles.nav}>
       <div className={styles.navProfile}>
-        <img className={styles.profilePhoto} src="avatar.png" width={180} height={180} alt="avatar" />
+        <img className={styles.profilePhoto} src="avatar.webp" width={180} height={180} alt="avatar" />
         <p className={styles.profileName}>
           <strong>Vladimir Vuksanović</strong>
         </p>
