@@ -2,6 +2,7 @@ import Navbar from '@/components/util/Navbar';
 import About from '@/components/sections/About';
 import Education from '@/components/sections/Education';
 import Projects from '@/components/sections/Projects';
+import Awards from '@/components/sections/Awards';
 import Contact from '@/components/sections/Contact';
 
 export default function Home() {
@@ -24,6 +25,12 @@ export default function Home() {
 
         <section id="projects">
           <Projects />
+        </section>
+
+        <hr />
+
+        <section id="awards">
+          <Awards />
         </section>
 
         <hr />

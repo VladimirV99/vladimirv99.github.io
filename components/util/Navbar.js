@@ -44,6 +44,11 @@ function Navbar() {
             </a>
           </li>
           <li>
+            <a href="#awards" className={styles.navItem} onClick={() => setShowDropdown(false)}>
+              Awards
+            </a>
+          </li>
+          <li>
             <a href="#contact" className={styles.navItem} onClick={() => setShowDropdown(false)}>
               Contact Me
             </a>

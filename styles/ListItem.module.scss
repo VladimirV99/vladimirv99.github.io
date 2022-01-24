@@ -1,17 +1,17 @@
-.educationItem {
+.item {
   display: flex;
 }
 
-.educationInfo {
+.info {
   flex-grow: 1;
 
   p {
     margin-block-start: 0.5rem;
     margin-block-end: 0.5rem;
   }
-}
 
-.schoolName {
-  font-size: 1.1em;
-  font-weight: bold;
+  .title {
+    font-size: 1.1em;
+    font-weight: bold;
+  }
 }
