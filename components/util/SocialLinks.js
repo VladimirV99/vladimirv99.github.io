@@ -2,26 +2,24 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faGitlab } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faFile } from '@fortawesome/free-solid-svg-icons';
 
+import { email, linkedinName, linkedinUrl, githubName, githubUrl, gitlabName, gitlabUrl } from './links';
+
 import styles from '@/styles/SocialLinks.module.scss';
 
 function SocialLinks() {
   return (
     <ul className={styles.socials}>
       <li>
-        <a
-          href="mailto:vvuksanovic1999@gmail.com"
-          title="Email: vvuksanovic1999@gmail.com"
-          className={styles.socialLink}
-        >
+        <a href={`mailto:${email}`} title={`Email: ${email}`} className={styles.socialLink}>
           <FontAwesomeIcon icon={faEnvelope} />
         </a>
       </li>
       <li>
         <a
-          href="https://www.linkedin.com/in/vladimir-vuksanovic/"
+          href={linkedinUrl}
           target="_blank"
           rel="noreferrer"
-          title="LinkedIn: vladimir-vuksanovic"
+          title={`LinkedIn: ${linkedinName}`}
           className={styles.socialLink}
         >
           <FontAwesomeIcon icon={faLinkedin} />
@@ -29,10 +27,10 @@ function SocialLinks() {
       </li>
       <li>
         <a
-          href="https://github.com/VladimirV99"
+          href={githubUrl}
           target="_blank"
           rel="noreferrer"
-          title="GitHub: VladimirV99"
+          title={`GitHub: ${githubName}`}
           className={styles.socialLink}
         >
           <FontAwesomeIcon icon={faGithub} />
@@ -40,10 +38,10 @@ function SocialLinks() {
       </li>
       <li>
         <a
-          href="https://gitlab.com/VladimirV99"
+          href={gitlabUrl}
           target="_blank"
           rel="noreferrer"
-          title="GitLab: VladimirV99"
+          title={`GitLab: ${gitlabName}`}
           className={styles.socialLink}
         >
           <FontAwesomeIcon icon={faGitlab} />

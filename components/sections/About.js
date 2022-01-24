@@ -2,6 +2,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faGitlab } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faFile } from '@fortawesome/free-solid-svg-icons';
 
+import { email, linkedinUrl, githubUrl, gitlabUrl } from '@/components/util/links';
+
 import styles from '@/styles/About.module.scss';
 
 function About() {
@@ -23,21 +25,16 @@ function About() {
         <a href="documents/VladimirVuksanovicCV.pdf" target="_blank" className="btn btn-icon">
           <FontAwesomeIcon icon={faFile} /> Resume
         </a>
-        <a href="mailto:vvuksanovic1999@gmail.com" className="btn btn-icon">
+        <a href={`mailto:${email}`} className="btn btn-icon">
           <FontAwesomeIcon icon={faEnvelope} /> Email
         </a>
-        <a
-          href="https://www.linkedin.com/in/vladimir-vuksanovic/"
-          target="_blank"
-          rel="noreferrer"
-          className="btn btn-icon"
-        >
+        <a href={linkedinUrl} target="_blank" rel="noreferrer" className="btn btn-icon">
           <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
         </a>
-        <a href="https://github.com/VladimirV99" target="_blank" rel="noreferrer" className="btn btn-icon">
+        <a href={githubUrl} target="_blank" rel="noreferrer" className="btn btn-icon">
           <FontAwesomeIcon icon={faGithub} /> GitHub
         </a>
-        <a href="https://gitlab.com/VladimirV99" target="_blank" rel="noreferrer" className="btn btn-icon">
+        <a href={gitlabUrl} target="_blank" rel="noreferrer" className="btn btn-icon">
           <FontAwesomeIcon icon={faGitlab} /> GitLab
         </a>
       </div>
