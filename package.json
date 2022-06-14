@@ -9,7 +9,7 @@
     "lint": "next lint",
     "export": "next export",
     "predeploy": "npm run build && npm run export && touch out/.nojekyll",
-    "deploy": "gh-pages -d out -t true -r 'https://github.com/VladimirV99/vladimirv99.github.io'"
+    "deploy": "gh-pages -d out -t true"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
