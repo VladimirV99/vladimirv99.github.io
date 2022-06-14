@@ -1,5 +1,10 @@
 .socialMenu {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
+
+  a {
+    margin: 0.25rem;
+  }
 }

@@ -14,7 +14,7 @@ function ListItem({ title, description, extra, date }) {
           {extra && <p>{extra}</p>}
         </div>
         {date && (
-          <p className="colored">
+          <p className={styles.date + ' colored'}>
             <FontAwesomeIcon icon={faCalendarAlt} className="mr" /> {date}
           </p>
         )}

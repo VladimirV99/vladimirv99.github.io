@@ -15,3 +15,18 @@
     font-weight: bold;
   }
 }
+
+.date {
+  min-width: fit-content;
+}
+
+@media screen and (max-width: 500px) {
+  .item {
+    flex-direction: column;
+  }
+
+  .date {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
