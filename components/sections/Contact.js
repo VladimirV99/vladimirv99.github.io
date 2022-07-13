@@ -56,20 +56,6 @@ function Contact() {
               </a>
             </td>
           </tr>
-          <tr>
-            <td className="center">
-              <FontAwesomeIcon icon={faPhone} size="lg" />
-            </td>
-            <td className="center">Phone:</td>
-            <td>(+381) 64 4438136</td>
-          </tr>
-          {/* <tr>
-            <td className="center">
-              <i className="fas fa-big fa-map-marker-alt"></i>
-            </td>
-            <td className="center">Address:</td>
-            <td>Užičkih heroja 27/1, Užice, Srbija</td>
-          </tr> */}
         </tbody>
       </table>
     </>
