@@ -5,7 +5,8 @@ function Education() {
     {
       title: 'Faculty of Mathematics, University of Belgrade',
       description: 'Master studies, Informatics',
-      date: '2021-now'
+      extra: 'GPA 10.00/10.00',
+      date: '2021-2023'
     },
     {
       title: 'Faculty of Mathematics, University of Belgrade',

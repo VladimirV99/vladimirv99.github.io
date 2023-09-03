@@ -17,7 +17,7 @@ function Navbar() {
           <strong>Vladimir Vuksanović</strong>
         </p>
         <p className={styles.profileTitle}>
-          <em>Bachelor of Informatics</em>
+          <em>Master of Informatics</em>
         </p>
       </div>
       <div className={styles.navbar}>
