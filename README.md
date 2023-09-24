@@ -13,23 +13,15 @@ npm install
 npm run dev
 ```
 
-### For production
-
-To create an optimized build for production, run the following commands:
-
-```bash
-npm install
-npm run build
-```
-
 ### Generating a static site
 
-To generate a static version of the website that doesn't need a node server, run the following commands:
+To generate an optimized static version of the website that doesn't need a node server, run the following commands:
 
 ```bash
 npm run build
-npm run export
 ```
+
+The exported version still has to be run in a live server like [serve](https://www.npmjs.com/package/serve) or [http-server](https://www.npmjs.com/package/http-server).
 
 ## Deployment
 

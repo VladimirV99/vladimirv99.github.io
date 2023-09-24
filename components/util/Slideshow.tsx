@@ -1,21 +1,24 @@
-import { useState, Fragment } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faExpand } from '@fortawesome/free-solid-svg-icons';
-import PropTypes from 'prop-types';
+"use client";
 
-import styles from '@/styles/Slideshow.module.scss';
+import { useState, Fragment } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faExpand } from "@fortawesome/free-solid-svg-icons";
 
-function Slideshow({ slides }) {
+import type { Slide } from "@/types";
+
+import styles from "@/styles/Slideshow.module.scss";
+
+function Slideshow({ slides }: { slides: Slide[] }) {
   const [slideIndex, setSlide] = useState(0);
   const currentSlide = slides[slideIndex];
   const [fullscreen, setFullscreen] = useState(false);
 
-  const openFullscreen = show => {
+  const openFullscreen = (show: boolean) => {
     setFullscreen(show);
     if (show) {
-      document.body.classList.add('modal-open');
+      document.body.classList.add("modal-open");
     } else {
-      document.body.classList.remove('modal-open');
+      document.body.classList.remove("modal-open");
     }
   };
 
@@ -29,14 +32,25 @@ function Slideshow({ slides }) {
 
           <img src={currentSlide.image} alt={currentSlide.description} />
 
-          <span className={styles.slideFullscreen} onClick={() => openFullscreen(true)}>
+          <span
+            className={styles.slideFullscreen}
+            onClick={() => openFullscreen(true)}
+          >
             <FontAwesomeIcon icon={faExpand} />
           </span>
 
-          <span className={styles.prev} onClick={() => setSlide((slideIndex + slides.length - 1) % slides.length)}>
+          <span
+            className={styles.prev}
+            onClick={() =>
+              setSlide((slideIndex + slides.length - 1) % slides.length)
+            }
+          >
             &#10094;
           </span>
-          <span className={styles.next} onClick={() => setSlide((slideIndex + 1) % slides.length)}>
+          <span
+            className={styles.next}
+            onClick={() => setSlide((slideIndex + 1) % slides.length)}
+          >
             &#10095;
           </span>
         </div>
@@ -50,7 +64,11 @@ function Slideshow({ slides }) {
             return (
               <div key={i} className={styles.thumbnailColumn}>
                 <img
-                  className={styles.thumbnail + ' ' + (slideIndex === i ? styles.active : '')}
+                  className={
+                    styles.thumbnail +
+                    " " +
+                    (slideIndex === i ? styles.active : "")
+                  }
                   src={slide.image}
                   onClick={() => setSlide(i)}
                   alt={slide.description}
@@ -61,21 +79,15 @@ function Slideshow({ slides }) {
         </div>
       </div>
       {fullscreen && (
-        <div className={styles.fullscreen} onClick={() => openFullscreen(false)}>
+        <div
+          className={styles.fullscreen}
+          onClick={() => openFullscreen(false)}
+        >
           <img src={currentSlide.image} alt={currentSlide.description}></img>
         </div>
       )}
     </Fragment>
   );
 }
-
-Slideshow.propTypes = {
-  slides: PropTypes.arrayOf(
-    PropTypes.shape({
-      image: PropTypes.string.isRequired,
-      description: PropTypes.string.isRequired
-    })
-  )
-};
 
 export default Slideshow;

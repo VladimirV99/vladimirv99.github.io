@@ -1,11 +1,23 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faGithub, faGitlab, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import {
+  faGithub,
+  faGitlab,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
-import { email, linkedinName, linkedinUrl, githubName, githubUrl, gitlabName, gitlabUrl } from '../util/links';
+import {
+  email,
+  linkedinName,
+  linkedinUrl,
+  githubName,
+  githubUrl,
+  gitlabName,
+  gitlabUrl,
+} from "@/data/contactInfo";
 
-import styles from '@/styles/Contact.module.scss';
+import styles from "@/styles/Contact.module.scss";
 
 function Contact() {
   return (

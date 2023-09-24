@@ -1,16 +1,32 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub, faGitlab } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faFile } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLinkedin,
+  faGithub,
+  faGitlab,
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons";
 
-import { email, linkedinName, linkedinUrl, githubName, githubUrl, gitlabName, gitlabUrl } from './links';
+import {
+  email,
+  linkedinName,
+  linkedinUrl,
+  githubName,
+  githubUrl,
+  gitlabName,
+  gitlabUrl,
+} from "@/data/contactInfo";
 
-import styles from '@/styles/SocialLinks.module.scss';
+import styles from "@/styles/SocialLinks.module.scss";
 
 function SocialLinks() {
   return (
     <ul className={styles.socials}>
       <li>
-        <a href={`mailto:${email}`} title={`Email: ${email}`} className={styles.socialLink}>
+        <a
+          href={`mailto:${email}`}
+          title={`Email: ${email}`}
+          className={styles.socialLink}
+        >
           <FontAwesomeIcon icon={faEnvelope} />
         </a>
       </li>
@@ -48,7 +64,12 @@ function SocialLinks() {
         </a>
       </li>
       <li>
-        <a href="documents/VladimirVuksanovicCV.pdf" target="_blank" title="My CV" className={styles.socialLink}>
+        <a
+          href="documents/VladimirVuksanovicCV.pdf"
+          target="_blank"
+          title="My CV"
+          className={styles.socialLink}
+        >
           <FontAwesomeIcon icon={faFile} />
         </a>
       </li>

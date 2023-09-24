@@ -1,4 +1,4 @@
-@import './Colors.scss';
+@import "./Colors.scss";
 
 .nav {
   background-color: $primaryColor;
@@ -123,7 +123,7 @@
     max-height: 0;
 
     &.show {
-      max-height: 300px;
+      max-height: 350px;
     }
   }
 }

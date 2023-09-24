@@ -1,14 +1,16 @@
-import { useState } from 'react';
-import PropTypes from 'prop-types';
+"use client";
 
-import ProjectLink from './ProjectLink';
-import Slideshow from './Slideshow';
+import { useState } from "react";
 
-import styles from '@/styles/Project.module.scss';
+import type { Project } from "@/types";
+import ProjectLink from "./ProjectLink";
+import Slideshow from "./Slideshow";
 
-function Project({ name, description, tags, url, slides }) {
+import styles from "@/styles/Project.module.scss";
+
+function ProjectView({ name, description, tags, url, slides }: Project) {
   const [showDropdown, setShowDropdown] = useState(false);
-  const drawerClass = styles.drawer + ' ' + (showDropdown ? styles.active : '');
+  const drawerClass = styles.drawer + " " + (showDropdown ? styles.active : "");
 
   return (
     <article className={styles.panel}>
@@ -32,11 +34,17 @@ function Project({ name, description, tags, url, slides }) {
           </div>
 
           {showDropdown ? (
-            <div className={styles.accordion} onClick={() => setShowDropdown(false)}>
+            <div
+              className={styles.accordion}
+              onClick={() => setShowDropdown(false)}
+            >
               Show less
             </div>
           ) : (
-            <div className={styles.accordion} onClick={() => setShowDropdown(true)}>
+            <div
+              className={styles.accordion}
+              onClick={() => setShowDropdown(true)}
+            >
               Show more
             </div>
           )}
@@ -46,17 +54,4 @@ function Project({ name, description, tags, url, slides }) {
   );
 }
 
-Project.propTypes = {
-  name: PropTypes.string.isRequired,
-  description: PropTypes.string,
-  tags: PropTypes.arrayOf(PropTypes.string),
-  url: PropTypes.string,
-  slides: PropTypes.arrayOf(
-    PropTypes.shape({
-      image: PropTypes.string.isRequired,
-      description: PropTypes.string.isRequired
-    })
-  )
-};
-
-export default Project;
+export default ProjectView;

@@ -1,5 +1,5 @@
-import Project from '../util/Project';
-import projectList from './projectList';
+import Project from "../util/ProjectView";
+import projectList from "@/data/projectList";
 
 function Projects() {
   return (
