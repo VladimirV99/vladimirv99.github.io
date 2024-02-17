@@ -1,10 +1,10 @@
+import type { Metadata } from "next";
+
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 
 import "@/styles/globals.scss";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-
-import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Vladimir Vuksanovic",
@@ -13,9 +13,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
     <html lang="en">
       <body>{children}</body>
