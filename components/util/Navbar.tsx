@@ -10,7 +10,7 @@ import styles from "@/styles/Navbar.module.scss";
 
 function Navbar() {
   const [showDropdown, setShowDropdown] = useState(false);
-  let dropdownClass = `${styles.navMenu} ${styles.dropdownToggle} ${
+  const dropdownClass = `${styles.navMenu} ${styles.dropdownToggle} ${
     showDropdown ? styles.show : ""
   }`;
   return (

@@ -1,14 +1,15 @@
-@import './Colors.scss';
+@use "sass:color";
+@use './Colors.scss';
 
 .btn {
   text-decoration: none;
-  color: $buttonTextColor;
+  color: Colors.$buttonTextColor;
   border-radius: 5px;
-  background-color: $buttonBackColor;
+  background-color: Colors.$buttonBackColor;
   padding: 5px 8px;
 
   &:hover {
-    background-color: darken($buttonBackColor, 5);
+    background-color: color.adjust(Colors.$buttonBackColor, $lightness: -5%);
   }
 }
 

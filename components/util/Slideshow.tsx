@@ -22,6 +22,9 @@ function Slideshow({ slides }: { slides: Slide[] }) {
     }
   };
 
+  if (currentSlide == null)
+    return <Fragment></Fragment>;
+
   return (
     <Fragment>
       <div className={styles.slideshow}>

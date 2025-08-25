@@ -1,5 +1,5 @@
-@import './Colors.scss';
-@import './Button.scss';
+@use './Colors.scss';
+@use './Button.scss';
 
 html {
   scroll-behavior: smooth;
@@ -12,8 +12,8 @@ body {
     'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: $backgroundColor;
-  color: $textColor;
+  background-color: Colors.$backgroundColor;
+  color: Colors.$textColor;
 
   &.modal-open {
     height: 100vh;
@@ -26,12 +26,8 @@ code {
 }
 
 hr {
-  border-color: $separatorColor;
+  border-color: Colors.$separatorColor;
   margin: 8px 0;
-}
-
-ul {
-  padding-inline-start: 30px;
 }
 
 .center {
@@ -43,7 +39,7 @@ ul {
 }
 
 .colored {
-  color: $accentColor;
+  color: Colors.$accentColor;
 }
 
 .fa-big {
@@ -57,7 +53,7 @@ ul {
 main {
   margin-left: 300px;
   padding: 1rem 1.5rem;
-  color: $textColor;
+  color: Colors.$textColor;
 }
 
 section {
@@ -75,7 +71,7 @@ section {
 
 a {
   text-decoration: none;
-  color: $accentColor;
+  color: Colors.$accentColor;
 }
 
 @media screen and (max-width: 900px) {

@@ -1,7 +1,8 @@
-@import "./Colors.scss";
+@use "sass:color";
+@use "./Colors.scss";
 
 .nav {
-  background-color: $primaryColor;
+  background-color: Colors.$primaryColor;
   width: 300px;
   display: flex;
   flex-direction: column;
@@ -19,7 +20,7 @@
   margin: 1rem 0rem;
 
   p {
-    color: $textColor;
+    color: Colors.$textColor;
     margin: 0.2rem;
   }
 
@@ -31,12 +32,12 @@
 .profilePhoto {
   width: 180px;
   margin: 1rem auto;
-  border: 5px solid $avatarBorderColor;
+  border: 5px solid Colors.$avatarBorderColor;
   border-radius: 50%;
 }
 
 .navMenu {
-  background-color: $primaryColor;
+  background-color: Colors.$primaryColor;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -48,7 +49,7 @@
 }
 
 .navToggle {
-  color: $textColor;
+  color: Colors.$textColor;
   text-decoration: none;
   font-size: 2em;
   padding: 0.6rem 1rem;
@@ -56,7 +57,7 @@
   cursor: pointer;
 
   &:hover {
-    background-color: lighten($primaryColor, 1);
+    background-color: color.adjust(Colors.$primaryColor, $lightness: 1%);
   }
 }
 
@@ -64,12 +65,12 @@
   display: block;
   padding: 0.75rem;
   font-size: 1.5em;
-  color: $textColor;
+  color: Colors.$textColor;
   text-decoration: none;
 
   &:hover {
-    background-color: lighten($primaryColor, 1);
-    color: $accentColor;
+    background-color: color.adjust(Colors.$primaryColor, $lightness: 1%);
+    color: Colors.$accentColor;
   }
 }
 
@@ -95,8 +96,8 @@
     align-items: center;
     justify-content: space-between;
     padding-inline-start: 1rem;
-    border-top: 1px solid $backgroundColor;
-    border-bottom: 1px solid $backgroundColor;
+    border-top: 1px solid Colors.$backgroundColor;
+    border-bottom: 1px solid Colors.$backgroundColor;
   }
 
   .navExtend {

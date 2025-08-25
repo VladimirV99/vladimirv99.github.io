@@ -5,7 +5,6 @@ import {
   faGitlab,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 import {
   email,

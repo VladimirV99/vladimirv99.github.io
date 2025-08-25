@@ -1,8 +1,9 @@
-@import './Colors.scss';
+@use "sass:color";
+@use './Colors.scss';
 
 .panel {
-  background-color: $primaryColor;
-  color: $textColor;
+  background-color: Colors.$primaryColor;
+  color: Colors.$textColor;
   width: 95%;
   font-size: 15px;
   margin: 1rem auto;
@@ -19,12 +20,12 @@
 }
 
 .panelExtra {
-  border-top: 1px solid $backgroundColor;
+  border-top: 1px solid Colors.$backgroundColor;
 }
 
 .accordion {
-  background-color: $primaryColor;
-  color: $textColor;
+  background-color: Colors.$primaryColor;
+  color: Colors.$textColor;
   cursor: pointer;
   padding: 10px;
   width: 100%;
@@ -38,13 +39,13 @@
 
 .accordion:hover,
 .accordion.active {
-  background-color: darken($primaryColor, 1);
+  background-color: color.adjust(Colors.$primaryColor, $lightness: -1%);
 }
 
 .drawer {
   margin: 0 0.25rem;
   padding: 0 10px;
-  background-color: $backgroundColor;
+  background-color: Colors.$backgroundColor;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease-out;
@@ -62,8 +63,8 @@
   flex-wrap: wrap;
 
   li {
-    color: $tagTextColor;
-    background-color: $tagBackColor;
+    color: Colors.$tagTextColor;
+    background-color: Colors.$tagBackColor;
     padding: 3px 5px;
     border-radius: 5px;
     margin: 2px;

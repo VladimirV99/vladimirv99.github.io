@@ -1,4 +1,4 @@
-@import './Colors.scss';
+@use './Colors.scss';
 
 #contactInfo {
   margin: 0 auto 2rem auto;
@@ -12,6 +12,6 @@
   }
 
   a {
-    color: $textColor;
+    color: Colors.$textColor;
   }
 }
