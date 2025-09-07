@@ -2,25 +2,6 @@ import type { Project } from "@/types";
 
 const projectList: Project[] = [
   {
-    name: "Dagger",
-    description:
-      "Dagger is a fully-featured, modern game engine made for educational purposes by the Ubisoft Belgrade team. It was used for a C++ game development course at the Faculty of Mathematics in Belgrade where each team had 2 months to make a small playable game.",
-    tags: ["C++", "OpenGL", "GLFW", "EnTT", "ImGui", "ASIO", "Meson"],
-    url: "https://github.com/VladimirV99/Dagger",
-    slides: [
-      { image: "projects/dagger/city_level.png", description: "City Level" },
-      {
-        image: "projects/dagger/factory_level.png",
-        description: "Factory Level",
-      },
-      { image: "projects/dagger/pause_menu.png", description: "Pause Menu" },
-      {
-        image: "projects/dagger/game_over.png",
-        description: "Game Over Screen",
-      },
-    ],
-  },
-  {
     name: "Circa2020",
     description:
       "Circa2020 is a tool for designing and simulating logic circuits. It supports all basic components (gates, plexers, memory, ...), saving and loading files, custom components and a lot of other useful features.",
@@ -46,11 +27,75 @@ const projectList: Project[] = [
     ],
   },
   {
+    name: "Dagger",
+    description:
+      "Dagger is a fully-featured, modern game engine made for educational purposes by the Ubisoft Belgrade team. It was used for a C++ game development course at the Faculty of Mathematics in Belgrade where each team had 2 months to make a small playable game.",
+    tags: ["C++", "OpenGL", "GLFW", "EnTT", "ImGui", "ASIO", "Meson"],
+    url: "https://github.com/VladimirV99/Dagger",
+    slides: [
+      { image: "projects/dagger/city_level.png", description: "City Level" },
+      {
+        image: "projects/dagger/factory_level.png",
+        description: "Factory Level",
+      },
+      { image: "projects/dagger/pause_menu.png", description: "Pause Menu" },
+      {
+        image: "projects/dagger/game_over.png",
+        description: "Game Over Screen",
+      },
+    ],
+  },
+  {
+    name: "Arduino Projects",
+    description:
+      "A collection of Arduino based projects that demonstrate the usage of various sensors and components.",
+    tags: ["Hardware", "Arduino", "Python"],
+    url: "https://github.com/VladimirV99/Arduino-Projects",
+  },
+  {
     name: "Automatic Translation",
     description:
       "Language translation using a sequence-to-sequence LSTM neural network. This project was made for the computer intelligence course at the Faculty of Mathematics, University of Belgrade.",
     tags: ["Machine Learning", "Python", "TensorFlow", "Jupyter-Notebook"],
     url: "https://github.com/VladimirV99/Automatic-Translation",
+  },
+  {
+    name: "Projektor",
+    description:
+      "Projektor is a microservice application for managing basic cinema operations. It supports managing movies, organizing screenings, reserving tickets and user reviews for previously watched movies.",
+    tags: [
+      "C#",
+      "dotnet",
+      "ASP.NET",
+      "Microservices",
+      "React",
+      "SQL",
+      "RabbitMQ",
+    ],
+    url: "https://github.com/VladimirV99/Projektor",
+    slides: [
+      { image: "projects/projektor/home.png", description: "Home page" },
+      {
+        image: "projects/projektor/browse_movies.png",
+        description: "Movie browsing page",
+      },
+      {
+        image: "projects/projektor/edit_movie.png",
+        description: "Edit movie page",
+      },
+      {
+        image: "projects/projektor/screenings_calendar.png",
+        description: "Screenings calendar",
+      },
+      {
+        image: "projects/projektor/manage_movies.png",
+        description: "Manage movies page",
+      },
+      {
+        image: "projects/projektor/manage_screenings.png",
+        description: "Manage screenings page",
+      },
+    ],
   },
   {
     name: "Marker",
@@ -188,13 +233,6 @@ const projectList: Project[] = [
         description: "File Selection Mode",
       },
     ],
-  },
-  {
-    name: "Arduino Projects",
-    description:
-      "A collection of Arduino based projects that demonstrate the usage of various sensors and components.",
-    tags: ["Hardware", "Arduino", "Python"],
-    url: "https://github.com/VladimirV99/Arduino-Projects",
   },
   {
     name: "Spring Pendulum",
