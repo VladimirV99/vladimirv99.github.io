@@ -1,8 +1,2 @@
-const aboutInfo = `
-My name is Vladimir and I was born on January 2nd 1999 in Užice, Serbia but today I live in Belgrade.
-I have a bachelor's degree in informatics from the Faculty of Mathematics, University of Belgrade and I'm currently working on getting a master's degree.
-I have developed web (MEAN, MERN stack), desktop (C++) and Android (Java, Kotlin) apps by myself and in a group environment.
-My hobbies include tinkering with electronics (Arduino, ESP32 and Raspberry Pi) and Game Development.
-`;
-
+const aboutInfo = `My name is Vladimir and I am a professional embedded software engineer. I have a masters's degree in informatics from the Faculty of Mathematics, University of Belgrade. I primarily work on compilers, mostly using the LLVM Compiler Infrastructure. Some of the tasks I worked on included writing and modifying optimization passes, optimizing the backend for proprietary targets and writing a custom clang-based static analysis tool. Aside from that, I have also developed web (MEAN, MERN stack), desktop (C++) and Android (Java) applications by myself and in a group environment. My hobbies include tinkering with electronics (ESP32, FPGAs, Arduino and Raspberry Pi) and Game Development.`;
 export default aboutInfo;

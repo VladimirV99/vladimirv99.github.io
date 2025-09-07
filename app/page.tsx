@@ -18,14 +18,14 @@ export default function Home() {
 
         <hr />
 
-        <section id="education">
-          <Education />
+        <section id="experience">
+          <Experience />
         </section>
 
         <hr />
-
-        <section id="experience">
-          <Experience />
+        
+        <section id="education">
+          <Education />
         </section>
 
         <hr />

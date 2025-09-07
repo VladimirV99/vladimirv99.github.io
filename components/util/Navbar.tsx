@@ -52,20 +52,20 @@ function Navbar() {
           </li>
           <li>
             <a
-              href="#education"
-              className={styles.navItem}
-              onClick={() => setShowDropdown(false)}
-            >
-              Education
-            </a>
-          </li>
-          <li>
-            <a
               href="#experience"
               className={styles.navItem}
               onClick={() => setShowDropdown(false)}
             >
               Experience
+            </a>
+          </li>
+          <li>
+            <a
+              href="#education"
+              className={styles.navItem}
+              onClick={() => setShowDropdown(false)}
+            >
+              Education
             </a>
           </li>
           <li>
